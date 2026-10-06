@@ -186,6 +186,21 @@ historical figure:
 - **The resolution:** despite how it began, they **fall for each other anyway**. The romance
   survives the betrayal and comes to fruition at the end of the story.
 
+### A-3 — The branching ending: "Will you come with me?" (2026-10-06)
+
+When the gateway opens for its fleeting window after Archon's defeat, **Min-jun asks her whether
+she wants to come with him to 2026.**
+
+- **If she says yes:** they **both go to 2026**. The game continues into a **playable epilogue in
+  modern-day Seoul**.
+- **If she refuses:** Min-jun ultimately **chooses to stay for her**. The game continues into a
+  **playable epilogue in Paris** instead.
+
+Both epilogues are full, playable "cool" endings, not just cutscenes. The brief's ending, with
+the newly discovered 1834 Delacroix portrait dedicated *"To our brother from tomorrow, who taught
+us the music of the stars"*, must land in **both** branches. That may mean adapting how and when
+it is discovered on each path.
+
 ## Output Instructions
 
 When prompted for content within this game universe, ensure that responses align with 16-bit
