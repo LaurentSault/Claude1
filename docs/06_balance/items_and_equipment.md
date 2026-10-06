@@ -1,6 +1,6 @@
 # Items, Equipment & Shops
 
-Status: v1.0 — 2026-10-06 · Owns: every item name (ITM), stat, price and location; shop inventories by chapter; key-item detail (KEY-01–KEY-41 as expanded here); Voicing and keepsake-forge rules; ultimate (Lost Era) equipment and the quests that grant it · Depends on: docs/05_systems/combat_ensemble.md, docs/06_balance/formulas_and_curves.md · Related: docs/07_world/overworld_and_towns.md (shop placement, hidden-item spots), docs/05_systems/secrecy_and_trust.md (gift reactions) · Canon: docs/00_CANON.md
+Status: v1.0 — 2026-10-06 · Owns: every item name (ITM), stat, price and location; shop inventories by chapter; key-item detail (KEY-01–KEY-41 as expanded here); Voicing and keepsake-forge rules; ultimate (Lost Era) equipment and the quests that grant it · Depends on: docs/05_systems/combat_ensemble.md, docs/06_balance/formulas_and_curves.md · Related: docs/05_systems/skills_and_progression.md (owner of every Opus Score), docs/07_world/overworld_and_towns.md (shop placement, map openness by chapter, hidden-item spots), docs/05_systems/secrecy_and_trust.md (gift reactions, Compromised refusals), docs/05_systems/salons_duels_and_economy.md (not yet published; CANON §11g and §14 govern) · Canon: docs/00_CANON.md
 
 ## Table of Contents
 
@@ -23,9 +23,9 @@ Status: v1.0 — 2026-10-06 · Owns: every item name (ITM), stat, price and loca
 
 ## 1. Scope, Conventions and ID Ranges
 
-**What this doc fixes.** Every ITM entry: name, UI name, stats, effect, price, sell value, and every place it can be obtained (shop, chest, steal, drop, quest, story). It also fixes what each canon shop sells in each chapter (CANON §12 names, CANON §14 bands), the Voicing upgrade service, the keepsake forge, and the detail behind every canon KEY item. **It does not fix** formulas (formulas_and_curves), battle rules (combat_ensemble), enemy steal/drop assignments by ENM ID (bestiary; this doc names the items and the families that carry them), chest tiles (dungeons), quest steps (side_and_bond_quests), HRM content of Opus Scores (skills_and_progression), or income tables (salons_duels_and_economy).
+**What this doc fixes.** Every ITM entry: name, UI name, stats, effect, price, sell value, and every place it can be obtained (shop, chest, steal, drop, quest, story). It also fixes what each canon shop sells in each chapter (CANON §12 names, CANON §14 bands), the Voicing upgrade service, the keepsake forge, and the detail behind every canon KEY item. **It does not fix** formulas (formulas_and_curves), battle rules (combat_ensemble), enemy steal/drop assignments by ENM ID (bestiary; this doc names the items and the families that carry them), chest tiles (dungeons), quest steps (side_and_bond_quests), Opus Scores: titles, teach lists, bonus shapes and the twelve Period Score prices (skills_and_progression owns every OPS; §8 restates its sources), or income tables (salons_duels_and_economy).
 
-**Binding inputs.** Price bands, tiers, slots, anchor consumables, Lost Era names and requirements, and the KEY list: CANON §14. Weapon ATK target ≈ 10 + 2.2L: CANON §10e. Armour DEF/RES targets per tier (head + body, split 40/60), relic DEF/RES budget (+10 each, CH-10 on), weapon-class accuracy: formulas_and_curves §9. Drop and steal odds (rare clamp(4 + ΔLCK/4, 2, 16)%, common 35%, steal 1-in-8 rare with an 8th-success pity): formulas_and_curves §5.4–5.5. Relic keys `ENC_HALF` (×0.5) and `ENC_NONE` (×0): formulas_and_curves §5.7. Formation odds that relics may move: combat_ensemble §5.2.
+**Binding inputs.** Price bands, tiers, slots, anchor consumables, Lost Era names and requirements, and the KEY list: CANON §14. Weapon ATK target ≈ 10 + 2.2L: CANON §10e. Armour DEF/RES targets per tier (head + body, split 40/60), relic DEF/RES budget (+10 each, CH-10 on), weapon-class accuracy: formulas_and_curves §9. Drop and steal odds (rare clamp(4 + ΔLCK/4, 2, 16)%, common 35%, steal 1-in-8 rare with an 8th-success pity): formulas_and_curves §5.4–5.5. Relic keys `ENC_HALF` (×0.5) and `ENC_NONE` (×0): formulas_and_curves §5.7. Formation odds that relics may move: combat_ensemble §5.2. Which Paris districts are open in which chapter: overworld_and_towns §2.2 (Paris is closed to the party in CH-10–CH-11 except Lucile's interlude maps, and in CH-12–CH-13 only P02, P10 and P28 are open, so no Paris weapon, armour, brush or relic counter trades in CH-10–CH-13).
 
 **Display rules (CANON §16h).** Item names ≤ 16 characters plus an 8-px icon. Where a canonical "[Tier] [Class]" name runs longer, the UI uses a short form: tiers abbreviate to *Prél.*, *Noct.*, *Rhap.*, *Conc.*, *Symph.*, and Opus Magnum to *Magnum*; Berlioz's class shows as *Swordcane* (e.g. "Symph. Swordcane", "Magnum Rapier"). The full name appears in the one-line description (≤ 30 characters in the Equip window, CANON §16a no-portrait width) and in the Almanach. Prices under 1 F show in sous ("8s"); everything else in whole francs (CANON §14).
 
@@ -41,7 +41,7 @@ Status: v1.0 — 2026-10-06 · Owns: every item name (ITM), stat, price and loca
 | ITM-100–399 | Weapons, by class blocks of 30 | see §3 |
 | ITM-400–449 | Head armour | 400–429 |
 | ITM-450–499 | Body armour | 450–481 |
-| ITM-500–569 | Relics | 500–545 |
+| ITM-500–569 | Relics | 500–556 |
 | ITM-600–679 | Gifts and curios | 600–660 |
 
 Weapon blocks: Batons 100–129 · Brushes 130–159 · Sword-canes 160–189 · Rapiers 190–219 · Hammers 220–249 · Quills 250–279 · Sabres 280–309 · Folios 310–339 · Canes 340–359 · Bows 360–369 · Drumsticks 370–379.
@@ -111,11 +111,11 @@ Pleyel's workshop (LOC-P12) **voices** a weapon: new felt and leather at the gri
 | +2 | ATK +4 | +50% | ×200 |
 | +3 | ATK +6 | +100% | ×200 |
 
-Rules: stages are bought in order; a fully voiced weapon has cost 175% of its price, which keeps Voicing a money sink rather than a tier skip (+6 ATK is about +5% AR at CH-09). Story weapons without a list price are voiced as if priced at their tier's named price. **Lost Era weapons, ITM-100 Tuning Fork and the Seoul Lost Era pieces cannot be voiced.** The stage shows as a suffix in its own column of the Equip window ("+2"), never inside the 16-character name. *Salons note:* this doc defines Voicing for weapons only; if salons_duels_and_economy voices the duel pianos too, it shares the name and this service window.
+Rules: stages are bought in order; a fully voiced weapon has cost 175% of its price, which keeps Voicing a money sink rather than a tier skip (+6 ATK is +12 AR: about +9% at CH-09, AR 136 → 148, and +5% at CH-16, AR 231 → 243, where the next tier's standard weapon gives +12 to +20 ATK). Story weapons without a list price are voiced as if priced at their tier's named price. **Lost Era weapons, ITM-100 Tuning Fork and the Seoul Lost Era pieces cannot be voiced.** *Windows:* P12 in CH-07–CH-09 and CH-14 (Paris is closed to the party in CH-10–CH-13), Kang Piano Service in CH-E1, P12 and the restored E02 piano in CH-E2. The stage shows as a suffix in its own column of the Equip window ("+2"), never inside the 16-character name. *Salons note:* this doc defines Voicing for weapons only; if salons_duels_and_economy voices the duel pianos too, it shares the name and this service window.
 
 ### 2.5 Keepsake forge (CH-E2, CANON §6, §14)
 
-In the Paris branch, Pleyel and Théo forge each friend's Lost Era weapon in the workshop yard at LOC-P12 when three conditions are met: (1) the friend is at bond **R10** and (2) has finished his or her **bond-quest finale**, and (3) the friend's **KEY-30 keepsake** was received in CH-17. No fee: Pleyel charges nothing for "metal that is not only metal" (historical_cast, NPC-15 line). Forging takes one visit and no Evening (the epilogues have no Evening budget, CANON §11i). A farewell skipped in CH-17 locks that forge until Da Capo (CANON §6). Requirements and effects per weapon: §12.
+In the Paris branch, Pleyel and Théo forge each friend's Lost Era weapon in the workshop yard at LOC-P12 when three conditions are met: (1) the friend is at bond **R10** and (2) has finished his or her **bond-quest finale**, and (3) the friend's **KEY-30 keepsake** was received in CH-17. No fee: Pleyel charges nothing for "metal that is not only metal" (historical_cast, NPC-15 line). Forging takes one visit and no Evening (the epilogues have no Evening budget, CANON §11i). A farewell skipped in CH-17 locks that forge until Da Capo (CANON §6). Requirements and effects per weapon: §12. Pleyel's smith works the metal and Théo fits, binds and voices it; Théo casts no brass before the Door's key, his first brass casting, in spring 1834 (CANON LAW-22).
 
 ---
 
@@ -130,16 +130,16 @@ Source codes: **Shop** (shop, chapter of first stock), **Chest** (dungeons place
 | 100 | Tuning Fork | 12 | +1 | REP-00 *Resonance* Stun base +10 · "It hums before it strikes." | Story CH-P (on his person, CANON §5f) | ◆ |
 | 101 | Étude Baton | 14 | +1 | — | Shop: Armurerie Vidal CH-02 | 60 |
 | 102 | Prélude Baton | 24 | +2 | — | Shop: Armurerie Vidal CH-03 | 220 |
-| 103 | Berlioz's Baton | 30 | +2 | Each Conduct adds +5 Crescendo · "From the barricade, with love." | Story, end of CH-04 (CANON §4b) | ◆ |
+| 103 | Berlioz's Baton | 30 | +2 | Each Conduct adds +5 Crescendo · "From the barricade, with love." | Story, end of CH-04 (CANON §4b); becomes ITM-112 in CH-14 | ◆ |
 | 104 | Nocturne Baton | 36 | +3 | — | Shop: Vidal CH-05 | 560 |
 | 105 | Ebony Baton | 42 | +3 | Recital Movement I costs −2 INS | Shop: Vidal & Fils CH-07 | 980 |
 | 106 | Rhapsodie Baton | 52 | +4 | — | Shop: Vidal CH-08 | 1,150 |
 | 107 | Silver Baton | 54 | +4 | Recital III bursts +10% | Shop: Vidal & Fils CH-09 · Chest: P31 Bercy | 1,380 |
-| 108 | Concerto Baton | 62 | +5 | — | Shop: Lambotte CH-11 (CCR) · Vidal CH-12 | 2,100 |
-| 109 | Rehearsal Baton | 70 | +5 | A Recital breaks only on a hit ≥ 30% of max HP (not 20%) | Shop: Vidal & Fils CH-12 | 2,800 |
+| 108 | Concerto Baton | 62 | +5 | — | Shop: Lambotte CH-11 (CCR) · Chest: R05 Vallée Noire (CH-10) | 2,100 |
+| 109 | Rehearsal Baton | 70 | +5 | A Recital breaks only on a hit ≥ 30% of max HP (not 20%) | Shop: Lambotte CH-11 (CCR) | 2,800 |
 | 110 | Gala Baton | 77 | +5 | Fight is LIGHT | Chest: P27 corridors (CH-13) | — (sell 1,725) |
 | 111 | Symphonie Baton | 85 | +6 | — | Shop: Vidal CH-14 | 3,900 |
-| 112 | Mended Baton | 89 | +6 | A Conducted ally also gains Swell +1 · "Théo re-trued the crack." | Story CH-14 (§12.2: ITM-103 reforged by Théo) | ◆ |
+| 112 | Mended Baton | 89 | +6 | A Conducted ally also gains Swell +1 · "Théo re-trued the crack." | Story CH-14: Théo re-trues ITM-103, cracked parrying a blade in the CH-13 rafters (§12.2) | ◆ |
 | 113 | Opus Magnum Baton (Magnum Baton) | 98 | +7 | — | Chest: P29 Hanseong zone (CH-15) · Shop: Vidal CH-E2 | 5,600 |
 | 114 | Ivory Baton | 102 | +7 | Recital Movement I costs −4 INS | Shop: Vidal & Fils CH-E2 | 6,900 |
 | 115 | Graphite Baton | 98 | +7 | — | Shop: Kang Piano Service CH-E1 | ₩1,120,000 |
@@ -156,9 +156,9 @@ Couleurs Ravenel (rue de Seine, LOC-P22) stocks every Paris brush; Lucile will n
 | 133 | Kolinsky Filbert | 42 | +3 | IMPRESSION +10% | Ravenel CH-07 | 980 |
 | 134 | Rhapsodie Brush | 52 | +4 | — | Ravenel CH-08 | 1,150 |
 | 135 | Badger Blender | 54 | +4 | *Shift the Hour* also gives her Cantabile | Ravenel CH-08 (she leaves at the CH-09 dawn) | 1,380 |
-| 136 | Nohant Sable | 66 | +5 | POINTILLÉ +10% · "Ma petite Lumière. — G." | Story CH-10: Sand's gift at Nohant after Mending scene 1 | ◆ |
-| 137 | Concerto Brush | 62 | +5 | — | Weiss CH-11 (CCR) · Ravenel CH-12 | 2,100 |
-| 138 | Munich Sable | 70 | +5 | Plein Air +25% also under Dusk | Weiss CH-11 (CCR) · Ravenel CH-12 | 2,800 |
+| 136 | Nohant Sable | 66 | +5 | POINTILLÉ +10% · "Ma petite Lumière. — G." | Story CH-10: Sand's gift at Nohant after Mending scene 1; becomes ITM-159 at LUMIÈRE (§12.3) | ◆ |
+| 137 | Concerto Brush | 62 | +5 | — | Weiss CH-11 (CCR; bought ahead, Lucile is in Paris) | 2,100 |
+| 138 | Munich Sable | 70 | +5 | Plein Air +25% also under Dusk | Weiss CH-11 (CCR) | 2,800 |
 | 139 | Palette Knife | 77 | +5 | Fight ignores 25% of DEF | Chest: P26 abbey wing, Lucile's CH-12 solo | — (sell 1,725) |
 | 140 | Symphonie Brush | 85 | +6 | — | Ravenel CH-14 | 3,900 |
 | 141 | Harbour Brush | 91 | +6 | IMPASTO and *Nuit étoilée* +10% | Quest: BQ-PC02b finale, Le Havre (LOC-R12) | ◆ |
@@ -180,8 +180,8 @@ Couleurs Ravenel (rue de Seine, LOC-P22) stocks every Paris brush; Lucile will n
 | 165 | Dandy's Sword-cane | 45 | Idée Fixe max 4 stacks | Vidal & Fils CH-07 | 980 |
 | 166 | Rhapsodie Sword-cane (Rhap. Swordcane) | 52 | — | Vidal CH-08 · Coutellerie CH-08 | 1,150 |
 | 167 | Ophelia Cane | 56 | Fight is WATER · "Harriet's wedding gift." | Story CH-09: Harriet's gift at the British Embassy, Thu 3 Oct | ◆ |
-| 168 | Concerto Sword-cane (Conc. Swordcane) | 66 | — | Coutellerie, Vidal CH-12 | 2,100 |
-| 169 | Francs-juges Cane | 74 | Tutti +10% | Coutellerie CH-12 | 2,800 |
+| 168 | Concerto Sword-cane (Conc. Swordcane) | 66 | — | Lambotte CH-11 (CCR; Berlioz is in Paris, buy ahead) | 2,100 |
+| 169 | Francs-juges Cane | 74 | Tutti +10% | Lambotte CH-11 (CCR) | 2,800 |
 | 170 | Rob Roy Cane | 80 | Cue: Brass also gives Berlioz Fortissimo | Chest: P27 rafters (CH-13) | — (sell 1,725) |
 | 171 | Symphonie Sword-cane (Symph. Swordcane) | 86 | — | Coutellerie CH-14 | 3,900 |
 | 172 | Waverley Cane | 91 | Idée Fixe max 4 stacks; Fight crit +5 points | Coutellerie CH-14 · Chest: R02 Château d'Orsenne | 5,100 |
@@ -201,8 +201,8 @@ Couleurs Ravenel (rue de Seine, LOC-P22) stocks every Paris brush; Lucile will n
 | 195 | Rhapsodie Rapier | 52 | — | Vidal CH-08 | 1,150 |
 | 196 | Chios Rapier | 54 | Fight is ICE | Chest: P17 sewers (CH-08) | — (sell 690) |
 | 197 | Algiers Rapier | 56 | Fight is LIGHT; Sketch also reveals steals | Quest: BQ-PC04 finale (by CH-09, mandatory) | ◆ |
-| 198 | Concerto Rapier | 66 | — | Lambotte CH-11 (CCR; Delacroix is in Paris, buy ahead) · Vidal CH-12 | 2,100 |
-| 199 | Sardanapalus Rapier (Sardanapale) | 74 | Fight is FIRE; Canvas *Sardanapale* +10% | Vidal & Fils CH-12 | 2,800 |
+| 198 | Concerto Rapier | 66 | — | Lambotte CH-11 (CCR; Delacroix is in Paris, buy ahead) | 2,100 |
+| 199 | Sardanapalus Rapier (Sardanapale) | 74 | Fight is FIRE; Canvas *Sardanapale* +10% | Lambotte CH-11 (CCR) | 2,800 |
 | 200 | Tableau Rapier | 80 | Chiaroscuro counter chance 40% (from 25%) | Drop: Living Tableaux, P26 (rare) | — (sell 1,725) |
 | 201 | Symphonie Rapier | 86 | — | Vidal CH-14 | 3,900 |
 | 202 | Palais Rapier | 91 | Canvas +10% | Vidal & Fils CH-14 | 5,100 |
@@ -220,8 +220,8 @@ Couleurs Ravenel (rue de Seine, LOC-P22) stocks every Paris brush; Lucile will n
 | 223 | Forge Hammer | 45 | Fight is EARTH | Vidal & Fils CH-07 | 980 |
 | 224 | Rhapsodie Hammer | 52 | — | Coutellerie CH-08 | 1,150 |
 | 225 | Spike Maul | 56 | Études +5% | Quest: BQ-PC05, second step | ◆ |
-| 226 | Concerto Hammer | 66 | — | Lambotte CH-11 (CCR) · Coutellerie CH-12 | 2,100 |
-| 227 | Liège Hammer | 74 | Recluse also triggers when he is the only member in the front row | Lambotte CH-11 (CCR) · Coutellerie CH-12 | 2,800 |
+| 226 | Concerto Hammer | 66 | — | Lambotte CH-11 (CCR) | 2,100 |
+| 227 | Liège Hammer | 74 | Recluse also triggers when he is the only member in the front row | Lambotte CH-11 (CCR) | 2,800 |
 | 228 | Seraing Maul | 80 | Fight is BOLT | Chest: R08 *Concordia* boiler deck (CH-11) | — (sell 1,725) |
 | 229 | Symphonie Hammer | 86 | — | Coutellerie CH-14 | 3,900 |
 | 230 | Machine Hammer | 91 | Études +5%; Acc 92 | Coutellerie CH-14 | 5,100 |
@@ -237,8 +237,8 @@ Couleurs Ravenel (rue de Seine, LOC-P22) stocks every Paris brush; Lucile will n
 | 251 | Steel Nib | 42 | +3 | His heals +10% | Vidal & Fils CH-07 | 980 |
 | 252 | Rhapsodie Quill | 52 | +4 | — | Vidal CH-08 | 1,150 |
 | 253 | Ballade Quill | 54 | +4 | *Borrow* also inflicts Lento (base 40) | Quest: BQ-PC06 finale (by CH-09, mandatory) | ◆ |
-| 254 | Concerto Quill | 62 | +5 | — | Lambotte CH-11 (CCR) · Vidal CH-12 | 2,100 |
-| 255 | Mazurka Quill | 70 | +5 | *Repay* with 3 charges also gives Allegro | Lambotte CH-11 (CCR) · Vidal & Fils CH-12 | 2,800 |
+| 254 | Concerto Quill | 62 | +5 | — | Lambotte CH-11 (CCR) | 2,100 |
+| 255 | Mazurka Quill | 70 | +5 | *Repay* with 3 charges also gives Allegro | Lambotte CH-11 (CCR) | 2,800 |
 | 256 | Liège Goose Quill | 77 | +5 | Sotto Voce targeting weight 0.4 (from 0.5) | Story CH-11: César Franck's father gives it at Liège when Chopin joins | ◆ |
 | 257 | Symphonie Quill | 85 | +6 | — | Vidal CH-14 | 3,900 |
 | 258 | Polonaise Quill | 89 | +6 | His heals +10%; M.EVA +5 | Vidal & Fils CH-14 | 5,100 |
@@ -254,8 +254,8 @@ Couleurs Ravenel (rue de Seine, LOC-P22) stocks every Paris brush; Lucile will n
 | 281 | Hussar Sabre | 45 | +2 | Bravura max +60% | Vidal & Fils CH-07 | 980 |
 | 282 | Rhapsodie Sabre | 52 | +2 | — | Coutellerie CH-08 | 1,150 |
 | 283 | Fantastique Sabre | 56 | +2 | TRANSCEND costs ×1.4 INS (not ×1.5) | Coutellerie CH-09 | 1,380 |
-| 284 | Concerto Sabre | 66 | +3 | — | Lambotte CH-11 (CCR) · Coutellerie CH-12 | 2,100 |
-| 285 | Liège Sabre | 74 | +3 | Fight is BOLT | Lambotte CH-11 (CCR) · Coutellerie CH-12 | 2,800 |
+| 284 | Concerto Sabre | 66 | +3 | — | Lambotte CH-11 (CCR) · Chest: R05 Vallée Noire (CH-10) | 2,100 |
+| 285 | Liège Sabre | 74 | +3 | Fight is BOLT | Lambotte CH-11 (CCR) | 2,800 |
 | 286 | Opéra Sabre | 80 | +3 | Bravura does not reset on the first hit taken each battle | Chest: P27 stage machinery (CH-13) | — (sell 1,725) |
 | 287 | Symphonie Sabre | 86 | +3 | — | Coutellerie CH-14 | 3,900 |
 | 288 | Cambridge Sabre | 91 | +3 | Riposte: counters physical hits 20% · "Vane's, as a Blue." | Prize: BOSS-20 won, CH-14 (Vane surrenders it when he defects) | ◆ |
@@ -333,12 +333,12 @@ Targets (formulas_and_curves §9): each tier's standard head + body pair lands i
 | 404 | Ultramarine Scarf | 3/4 | Plein Air preemptive bonus also indoors · "Faded, and hers." | LU | Story: joins wearing it (CH-05); ◆ | ◆ |
 | 406 | Beaver Top Hat | 5/3 | Immune to Smoke | Men | Vidal & Fils CH-05 (the Faubourg dress code) | 780 |
 | 407 | Poke Bonnet | 4/4 | Immune to Reverie | LU, FA | Vidal & Fils CH-05 | 760 |
-| 408 | Turban of Tangier | 5/4 | M.EVA +5 | DE, LI, AL | Quest: BQ-PC04, second step | ◆ |
+| 408 | Moroccan Cap | 5/4 | M.EVA +5 | DE, LI, AL | Quest: BQ-PC04, second step | ◆ |
 | 410 | Fencing Mask | 7/4 | Physical counter damage taken −50% (Riposte, Chiaroscuro and Libretto `ON HIT`) | BE, DE, LI, AL | Coutellerie CH-08 | 1,050 |
 | 411 | Lace Cap | 6/6 | Immune to Hush | All | Vidal & Fils CH-09 | 1,100 |
-| 413 | Rhine Cap | 10/7 | Immune to Lento | All | Lambotte CH-11 (CCR) · Vidal CH-12 | 2,200 |
-| 414 | Pelisse Hood | 9/9 | Immune to Out of Tune and Discord | All except MJ (already immune) | Weiss CH-11 (CCR) · Vidal & Fils CH-12 | 2,400 |
-| 415 | Grey Kid Cap | 11/8 | Immune to Stagefright | All | Steal: Grey Hand elites, P26 (rare) | — (sell 1,250) |
+| 413 | Rhine Cap | 10/7 | Immune to Lento | All | Lambotte CH-11 (CCR) | 2,200 |
+| 414 | Pelisse Hood | 9/9 | Immune to Out of Tune and Discord | All except MJ (already immune) | Weiss CH-11 (CCR) | 2,400 |
+| 415 | Grey Kid Cap | 11/8 | Immune to Stagefright | All | Steal: Grey Hand elites, W01 Shadow formations (CH-09+) and P30 (rare); steal-only (§11.4) | — (sell 1,250) |
 | 416 | Opera Hat | 11/8 | M.EVA +5 | Men | Chest: P27 cloakroom (CH-13) | — (sell 1,300) |
 | 418 | Astrakhan Hat | 13/11 | Immune to Lento | All | Vidal & Fils CH-14 | 3,600 |
 | 419 | Silk Bonnet | 12/12 | Immune to Hush, Reverie | All | Vidal & Fils CH-14 | 3,800 |
@@ -360,9 +360,9 @@ Targets (formulas_and_curves §9): each tier's standard head + body pair lands i
 | 460 | Fencing Jacket | 12/6 | Physical damage taken −10% | BE, DE, LI, AL | Coutellerie CH-08 | 1,100 |
 | 461 | Moiré Gown | 9/9 | M.EVA +5 | LU, FA | Vidal & Fils CH-08 | 1,050 |
 | 462 | Wedding Waistcoat | 10/8 | Party Crescendo +10 at battle start | BE | Story CH-09 (Berlioz wears it out of his own wedding) | ◆ |
-| 464 | Travelling Cloak | 14/11 | Immune to Lento | All | Lambotte CH-11 (CCR) · Vidal CH-12 | 2,300 |
-| 465 | Berry Smock | 13/12 | Dawn regeneration doubled for the wearer | All | Mercerie Aubert CH-10 (CCR) · Vidal & Fils CH-12 | 2,200 |
-| 466 | Buff Coat | 17/11 | Physical damage taken −10% | BE, DE, LI, AL, JW | Coutellerie CH-12 | 2,600 |
+| 464 | Travelling Cloak | 14/11 | Immune to Lento | All | Lambotte CH-11 (CCR) | 2,300 |
+| 465 | Berry Smock | 13/12 | Dawn regeneration doubled for the wearer | All | Mercerie Aubert CH-10 (CCR) | 2,200 |
+| 466 | Buff Coat | 17/11 | Physical damage taken −10% | BE, DE, LI, AL, JW | Lambotte CH-11 (CCR) | 2,600 |
 | 467 | Sylphide Gauze | 14/14 | EVA +5, M.EVA +5 | LU, FA, CH | Chest: P27 rafters, Taglioni's dressing room (CH-13) | — (sell 1,300) |
 | 468 | Riverman's Oilskin | 15/12 | Immune to the Rain field's Soaked (combat_ensemble §10.2) | All | Chest: R08 *Concordia* (CH-11) | — (sell 1,200) |
 | 470 | Greatcoat | 20/14 | Physical damage taken −10% | BE, DE, LI, AL, JU | Coutellerie CH-14 | 3,800 |
@@ -397,22 +397,22 @@ FF6 relic analogues in period dress. Relic prices follow the CANON §14 band of 
 | 508 | Watch Lantern | Back Guard | No Back Attack and no Pincer (combat_ensemble §5.2) | Corbel CH-06 | 1,500 |
 | 509 | Dancing Pumps | — | EVA +10 | Vidal & Fils CH-07 | 1,800 |
 | 510 | Rossini's Napkin | — | After each victory the wearer regains 10% max HP · "Stains from a famous supper." | Prize: BOSS-08 won (Rossini) | ◆ |
-| 511 | Three-Hand Glove | — | Fight becomes EARTH / LIGHT / WIND, best multiplier applies (dual rule, CANON §10c) | Prize: BOSS-08 lost (Thalberg's courtesy) · or BOSS-35 won | ◆ |
+| 511 | Three-Hand Glove | — | Fight becomes EARTH / LIGHT / WIND, best multiplier applies (dual rule, CANON §10c) | Prize: BOSS-08 lost (Thalberg's courtesy) · or BOSS-35 won, if not yet owned (§11.3) | ◆ |
 | 512 | Pleyel Tuning Hammer (Tuning Hammer) | — | **CHRONO resist ×0.5** (CANON §10c); immune to Lento | Story CH-08: Pleyel's thanks after the Sat 21 Sep concert (KEY-17) | ◆ |
 | 513 | Copal Varnish | auto-Protect | Wearer starts each battle with **Varnish** | Corbel CH-08 | 2,200 |
 | 514 | Tortoise Fan | — | EVA +8, M.EVA +8 | Corbel CH-08 | 2,000 |
 | 515 | Postilion Boots | Hermes Sandals | Wearer starts each battle with **Allegro** | Corbel CH-09 | 2,400 |
 | 516 | Shepherd's Bell | Tintinnabar | Wearer regains 1 HP per field step | Story CH-10: Père Grillon at Nohant, after Lucile's Pissarro-style Berry canvas | ◆ |
-| 517 | Steel Busk | — | DEF +10 | Lambotte CH-11 (CCR) · Corbel CH-12 | 2,800 |
-| 518 | Lodestone Charm | — | RES +10 | Weiss CH-11 (CCR) · Corbel CH-12 | 2,800 |
-| 519 | Huntsman's Horn | — | Preemptive +10 points (cap 40%, formulas_and_curves §4.10) | Chest: R01 Franchard gorge (CH-10) · Corbel CH-12 | 3,000 |
-| 520 | Smith's Wristband | Hyper Wrist | STR +15% | Weiss CH-11 (CCR) · Corbel CH-12 | 3,400 |
-| 521 | Ivory Hairpin | Gold Hairpin | INS costs ×0.75 | Weiss CH-11 (CCR) · Corbel CH-12 | 4,200 |
-| 522 | Academy Medal | Earring | Magical damage dealt +15% | Corbel CH-12 | 4,000 |
-| 523 | Gilder's Leaf | Barrier Ring (auto-Shell) | Wearer starts each battle with **Glaze** | Corbel CH-12 | 3,800 |
-| 524 | Grey Kid Glove | — | Crescendo gains from this wearer ×1.25 (not with Groove) | Steal: Grey Hand elites, P31 and P26 (rare) | — (sell 1,500) |
+| 517 | Steel Busk | — | DEF +10 | Lambotte CH-11 (CCR) · Corbel CH-14 | 2,800 |
+| 518 | Lodestone Charm | — | RES +10 | Weiss CH-11 (CCR) · Corbel CH-14 | 2,800 |
+| 519 | Huntsman's Horn | — | Preemptive +10 points (cap 40%, formulas_and_curves §4.10) | Chest: R01 Franchard gorge (CH-10) · Weiss CH-11 (CCR) · Corbel CH-14 | 3,000 |
+| 520 | Smith's Wristband | Hyper Wrist | STR +15% | Weiss CH-11 (CCR) · Corbel CH-14 | 3,400 |
+| 521 | Ivory Hairpin | Gold Hairpin | INS costs ×0.75 | Weiss CH-11 (CCR) · Corbel CH-14 | 4,200 |
+| 522 | Academy Medal | Earring | Magical damage dealt +15% | Weiss CH-11 (CCR) · Corbel CH-14 | 4,000 |
+| 523 | Gilder's Leaf | Barrier Ring (auto-Shell) | Wearer starts each battle with **Glaze** | Weiss CH-11 (CCR) · Corbel CH-14 | 3,800 |
+| 524 | Grey Kid Glove | — | Crescendo gains from this wearer ×1.25 (not with Groove) | Steal: Grey Hand, P31, P26, P27 (rare) · Drop: Grey Hand elites (rare) · BOSS-19 (guaranteed) | — (sell 1,500) |
 | 525 | Brass Escapement | — | Wearer's battle-start gauge is at least 128 | Drop: Brücke Mk. I automata, P18 (rare) · Steal: river automata, R08 | — (sell 1,200) |
-| 526 | Garde Gorget | True Knight | Wearer intercepts single-target hits on allies below 25% HP (as Bulwark, without the −50%) | Steal: Roussel's Cleaners, P34 (rare) | — (sell 2,500) |
+| 526 | Garde Gorget | True Knight | Wearer intercepts single-target hits on allies below 25% HP (as Bulwark, without the −50%) | Steal: Roussel's Cleaners, P34, and BOSS-21 (rare); steal-only (§11.4) | — (sell 2,500) |
 | 527 | Sylphide Ribbon | Ribbon | Immune to Smoke, Hush, Reverie, Delirium, Stagefright, Lento, Marble, Frenzy, Out of Tune, Discord, Swing, Miasma | Story CH-13: Taglioni (NPC-37) ties it on Lucile's wrist after the gala | ◆ |
 | 528 | Nohant Metronome | — | **CHRONO resist ×0.5** (canon); immune to Swing · "Pour celui qui bat mal la mesure. — G." | Find: Sand's piano at Nohant, CH-14 revisit (overworld_and_towns §7) | ◆ |
 | 529 | Venetian Mirror | Wall Ring | Wearer starts each battle with **Mirror** | Corbel CH-14 | 6,500 |
@@ -420,8 +420,8 @@ FF6 relic analogues in period dress. Relic prices follow the CANON §14 band of 
 | 531 | Paganini String | Offering | Fight strikes 4 times, each ×0.5, never crits | Drop: BOSS-36 guaranteed (bosses binds) | ◆ |
 | 532 | Felted Clapper | Moogle Charm | `ENC_NONE`: no random encounters (scripted, touch and boss battles still occur) | Story CH-14: Jacquot at Notre-Dame's bell chamber (LOC-P32) | ◆ |
 | 533 | Premier Prix | Exp. Egg | EXP received ×1.5 | Story CH-14: Cherubini, after Hiller's concert (Sun 15 Dec), "an old prize nobody claimed" | ◆ |
-| 534 | Fouine's Ring | Sneak Ring | Pilfer success +20 points | Quest CH-14: return La Fouine's stolen dice (P10) | ◆ |
-| 535 | Belgiojoso Cameo | — | M.EVA +15; immune to Hush | Prize: BOSS-35 won (CH-14 or CH-E2) · or SQ-20 completion | ◆ |
+| 534 | Fouine's Ring | Sneak Ring | Pilfer success +20 points | Trade CH-14: La Fouine (TF-018, P10) sells it once the party has landed 20 successful Pilfers | 3,000 |
+| 535 | Belgiojoso Cameo | — | M.EVA +15; immune to Hush | Prize: SQ-20 completion (CH-14) · or BOSS-35 won in CH-E2 if SQ-20 was skipped (§11.3) | ◆ |
 | 536 | Clef Chip | — | Wearer's CHRONO damage dealt +20% | Drop: Amalgam Echoes, P29 (rare) | — (sell 3,500) |
 | 537 | Golden Lyre | Economizer (half) | INS costs ×0.5 (does not stack with Ivory Hairpin; Inspired then gives ×0.25) | Chest: E03 Dead Heart (CH-E2) · Chest: S09 Namsan summit (CH-E1) | ◆ |
 | 538 | Medal of 1834 | — | DEF +10, RES +10 | Vidal & Fils CH-E2 | 9,800 |
@@ -431,7 +431,18 @@ FF6 relic analogues in period dress. Relic prices follow the CANON §14 band of 
 | 542 | Hand Warmer | — | Immune to Lento, Fermata | Haneul Mart CH-E1 | ₩1,600,000 |
 | 543 | Headphones | — | Immune to Reverie, Delirium, Hush | Gyeoul Outfitters CH-E1 (CCR) | ₩2,000,000 |
 | 544 | Transit Card | Sprint Shoes | Field speed ×1.5 on Seoul maps; subway rides free | Story CH-E1: Seo-yeon's spare card | ◆ |
-| 545 | Concert Pass | — | Party Crescendo +20 at battle start | Busking ladder, rank 4 (Headliner) | ◆ |
+| 545 | Concert Pass | — | Party Crescendo +20 at battle start | Busking ladder, 4th spot cleared (§11.3) | ◆ |
+| 546 | Gilt Lorgnette | Scan-on-hit | The wearer's Fight also works as a Rough Sketch (target's HP and affinities shown for the battle) · "Mme Lavergne sees everything twice." | Prize: first Rapture ≥ 90 at Salon Lavergne (§11.3) | ◆ |
+| 547 | Feuilleton | — | Immune to Reverie and Delirium · "To be continued in Tuesday's number." | Prize: first Rapture ≥ 90 at Salon Bastide | ◆ |
+| 548 | Havana Mantilla | — | Wearer regains 2% of max INS at each turn start | Prize: first Rapture ≥ 90 at Salon Merlin | ◆ |
+| 549 | Ivory Missal | — | Wearer's healing +15% | Prize: first Rapture ≥ 90 at Salon d'Agoult | ◆ |
+| 550 | Opal of Vienna | — | Allegro on the wearer lasts 9 turns (from 6) | Prize: first Rapture ≥ 90 at Countess Apponyi's | ◆ |
+| 551 | Golden Compass | — | The wearer's rank actions take ×0.85 (from ×0.75) and all-target actions ×0.6 (from ×0.5) | Drop: BOSS-15 Delorme, guaranteed (§11.2) | ◆ |
+| 552 | Stopped Horn | — | Immune to Fermata and Lento; the wearer's gauge cannot be pushed back (Escapement, Libretto `ATB` −) | Drop: BOSS-18, guaranteed: one of the four horns, its throat plugged | ◆ |
+| 553 | Orpheus Mask | — | Immune to Unwritten and Reverie | Drop: BOSS-24, guaranteed | ◆ |
+| 554 | Varga Lens | — | The wearer's stats cannot be lowered (Libretto `STAT` −, Composed-type debuffs, Out of Tune's ART cut) | Drop: BOSS-25, guaranteed | ◆ |
+| 555 | Ground Lens | — | The wearer's magical damage treats the target's RES as 25% lower | Drop: BOSS-33, guaranteed (Delorme's own optics) | ◆ |
+| 556 | Unstruck Bell | — | Party Crescendo +50 at battle start; Synergies the wearer joins deal +10% | Drop: BOSS-43, guaranteed (NG+) | ◆ |
 
 **Tuning note.** Copal Varnish and Gilder's Leaf are named for Lucile's father's trade (a frame-gilder, CANON §5e) and her own varnish tricks (she taught Sand); Varnish and Glaze are the canon statuses. One of each on two members is the intended mid-game defensive build; neither stacks with the status from other sources (a battle-long status is either on or off).
 
@@ -461,17 +472,17 @@ Items heal and hurt **fixed amounts** (CANON §10b), ignore rows, Mirror and Hus
 | 014 | Courage Draught **A** | Cure Stagefright | — | Laborde CH-03 | 25 |
 | 015 | Sculptor's Oil **A** | Cure Marble | — | Laborde CH-06 | 60 |
 | 016 | Pitch Pipe **A** | Cure Out of Tune, Discord | — | Laborde CH-04 | 40 |
-| 017 | Panacea **A** | Cure all negative statuses except KO | — | Laborde CH-07 | 300 |
-| 018 | Picnic Hamper **A** | Full party rest at a Lectern | — | Laborde CH-05 | 400 |
+| 017 | Panacea **A** | Cure all negative statuses except KO | — | Laborde CH-08 | 300 |
+| 018 | Picnic Hamper **A** | Full party rest at a Lectern | — | Mercerie Aubert CH-10 (CCR) · Laborde CH-12 | 400 |
 | 019 | Barley Sugar | +15 INS | *Sucre d'orge* | Laborde CH-03 | 12 |
 | 020 | Vichy Water | 300 HP to the party | Bottled spa water | Laborde CH-05 | 120 |
 | 021 | Eau de Mélisse | Party Cantabile | The Carmelite water | Laborde CH-07 | 90 |
 | 022 | Hoffmann's Drops | Cure Lento, Swing | Ether drops | Laborde CH-08 | 30 |
-| 023 | Grand Vichy | 1,000 HP to the party | — | Laborde CH-12 | 600 |
+| 023 | Grand Vichy | 1,000 HP to the party | — | Laborde CH-12 | 400 |
 | 024 | Valerian Tincture | Cure Delirium, Frenzy | — | Pharmacie du Dôme CH-11 (CCR) · Laborde CH-12 | 80 |
 | 025 | Smelling Bottle | Revive at 25% and cure all statuses | — | Laborde CH-14 | 450 |
 | 026 | Café Royal | +60 INS to the party | Coffee with cognac | Laborde CH-14 | 900 |
-| 027 | Hot Chestnuts | 200 HP; also Lucile's Liked gift | Quay vendor | P22 vendor, CH-03 | 2 |
+| 027 | Hot Chestnuts | 60 HP; also Lucile's Liked gift | Quay vendor | P22 vendor, CH-03 | 2 |
 
 **Free supply (secrecy_and_trust §2.2):** Mère Gaudin gives **2 Tisanes each chapter from CH-04** if `byt_boil_water` was taken; Sœur Marthe gives **2 Panaceas** once (`byt_handwash`, CH-12); the Prefecture pays **100 F** (`byt_line_up`, CH-04).
 
@@ -491,8 +502,8 @@ Fixed damage, elemental (affinity and Light apply, CANON §10c), no crit, never 
 | 047 | Seltzer Siphon | WATER 400, one enemy | Laborde CH-08 | 120 |
 | 048 | Mesmer's Magnet | Reverie (base 50), one enemy | Corbel CH-08 | 60 |
 | 049 | Tocsin Bell | Stun (base 35), one enemy; bosses immune | Corbel CH-09 | 80 |
-| 050 | Ruggieri Rocket | FIRE 900, all enemies | Corbel CH-12 | 300 |
-| 051 | Bellows Charge | WIND 900, all enemies | Weiss CH-11 (CCR) · Corbel CH-12 | 300 |
+| 050 | Ruggieri Rocket | FIRE 900, all enemies | Chest: P26 abbey wing ×2 (CH-12) · Corbel CH-14 | 300 |
+| 051 | Bellows Charge | WIND 900, all enemies | Weiss CH-11 (CCR) · Corbel CH-14 | 300 |
 | 052 | Ruggieri Bouquet | FIRE 2,000, all enemies | Corbel CH-14 | 1,200 |
 | 053 | Galvanic Pile | BOLT 2,000, all enemies | Corbel CH-14 | 1,200 |
 
@@ -577,33 +588,33 @@ Canon fixes each KEY's name, source and purpose (CANON §14). This table adds th
 
 ## 8. Opus Score Sources
 
-CANON §11c fixes the families: 12 Period Scores (OPS-01–12) sold at Maison Farrenc and Schlesinger's; 12 Future Scores ✦ (OPS-13–24) transcribed by Min-jun at a Lectern, mapped to REP-17, REP-35…REP-45; 8 secret Scores (OPS-25–32) from bosses and quests. Each Score is unique (bought once). `skills_and_progression` owns every OPS's skills, rates, bonus shape and Invocation; **skills_and_progression.md does not exist yet**, so the Period and secret titles below are this doc's proposals (all works public domain and published before 1834). Prices and sources are binding here. "Tier" is the highest Harmony tier a Score may teach under the formulas_and_curves §8.4 gates (T2 from CH-05, T3 first obtainable CH-10, T4 CH-14).
+CANON §11c fixes the families: 12 Period Scores (OPS-01–12) sold at Maison Farrenc and Schlesinger's, 12 Future Scores ✦ (OPS-13–24) transcribed by Min-jun at a Lectern, 8 secret Scores (OPS-25–32) from bosses and quests. **skills_and_progression owns every OPS** (its §4: title, work, teach list, bonus shape, Invocation and the twelve Period prices); this section restates its sources and prices so that shop stock (§10) and boss rewards (§11.2) are built from one table, and it defers to skills_and_progression on any difference. Scores are not ITM entries: each sits in the Opus menu, is bought once (the shop row greys out "Owned"), cannot be sold, and never appears in a chest. MF = Maison Farrenc (LOC-P19), Schl. = Schlesinger's (LOC-P10, door opens CH-06).
 
-| OPS | Score (proposed title) | Tier | Source | Price |
+| OPS | Score (UI) | Work | Source | Price |
 |---|---|---|---|---|
-| OPS-01 | Gluck, *Orphée et Eurydice* (1774) | T2 | Maison Farrenc CH-05 | 900 |
-| OPS-02 | Mozart, *Don Giovanni* (1787) | T2 | Maison Farrenc CH-05 | 900 |
-| OPS-03 | Haydn, *The Creation* (1798) | T2 | Maison Farrenc CH-06 | 1,200 |
-| OPS-04 | Beethoven, Symphony No. 5 (1808) | T2 | Schlesinger's CH-06 | 1,200 |
-| OPS-05 | Weber, *Der Freischütz* (1821) | T2 | Schlesinger's CH-07 | 1,500 |
-| OPS-06 | Rameau, *Les Indes galantes* (1735) | T2 | Maison Farrenc CH-08 | 2,000 |
-| OPS-07 | Beethoven, Symphony No. 9 (1824) | T3 | Story CH-10: Aristide Farrenc posts it to the Auberge du Lion d'Argent, La Châtre (the first T3 Score) | — |
-| OPS-08 | Rossini, *Guillaume Tell* (1829) | T3 | Schlesinger's CH-12 | 3,600 |
-| OPS-09 | Bellini, *Norma* (1831) | T3 | Schlesinger's CH-12 | 3,600 |
-| OPS-10 | Meyerbeer, *Robert le diable* (1831) | T3 | Story CH-13: Meyerbeer's (NPC-34) compliment after the gala, a bound copy | — |
-| OPS-11 | Handel, *Messiah* (1742) | T4 | Maison Farrenc CH-14 | 7,200 |
-| OPS-12 | Beethoven, *Missa solemnis* (1823) | T4 | Schlesinger's CH-14 | 7,200 |
-| OPS-13–24 ✦ | Future Scores (REP-17, REP-35–45, CANON §15d) | per gate | Transcription at a Lectern after each CANON §15d trigger: OPS-14 CH-05, OPS-16 CH-06, OPS-17 CH-07, OPS-15 and OPS-23 CH-08, OPS-18 CH-10, OPS-19 CH-11, OPS-13 and OPS-20 CH-12, OPS-22 CH-13, OPS-21 CH-14, OPS-24 CH-15 | — |
-| OPS-25 | Kang Min-jun, *Concerto "Lost Era"*: the cadenza (secret) | T3 | CH-13, Own Voice ≥ 6 (CANON §11g) | — |
-| OPS-26 | Paganini, *24 Caprices* (pub. 1820) | T4 | BOSS-36 Paganini's Shadow (CH-14) | — |
-| OPS-27 | Schubert, *Winterreise* (1828) | T3 | BOSS-37 The Lorelei Echo (CH-11 or CH-14) | — |
-| OPS-28 | Rousseau, *Le Devin du village* (1752) | T4 | BOSS-40 The Philosophers' Echo (CH-14) | — |
-| OPS-29 | Beethoven, *Wellington's Victory* (1813) | T4 | BOSS-38 The Forge Colossus (CH-14 or CH-E2) | — |
-| OPS-30 | Haydn, *The Seasons* (1801) | T4 | BOSS-39 The Needle Echo (CH-14, BQ-PC02b) | — |
-| OPS-31 | Bach, *The Art of Fugue* (1751) | T5 | BOSS-31 Ossia (CH-E1) or BOSS-34 The Unwritten (CH-E2), beside Delorme's notebook page (LAW-27) | — |
-| OPS-32 | *Harmonies de l'ère perdue*, complete (REP-28) | T5 | BOSS-43 Da Capo: The Unstruck Bell (NG+) | — |
+| OPS-01 | Well-Tempered | J. S. Bach, *Das wohltemperierte Klavier* I (1722) | MF CH-05 | 400 |
+| OPS-02 | Messiah | Handel, *Messiah* (1741) | MF CH-05 | 500 |
+| OPS-03 | Requiem | Mozart, Requiem, K. 626 (1791) | Schl. CH-06 | 600 |
+| OPS-04 | Eroica | Beethoven, Symphony No. 3 (1804) | Schl. CH-06 | 700 |
+| OPS-05 | Pastoral | Beethoven, Symphony No. 6 (1808) | MF CH-07, after the duel | 800 |
+| OPS-06 | Orphée | Gluck, *Orphée et Eurydice*, Paris version (1774) | Schl. CH-08 | 1,000 |
+| OPS-07 | Guillaume Tell | Rossini, *Guillaume Tell* (1829) | MF CH-08 | 1,100 |
+| OPS-08 | Robert le diable | Meyerbeer, *Robert le diable* (1831) | Schl. CH-12 (the return to Paris; P10 is open) | 2,000 |
+| OPS-09 | Norma | Bellini, *Norma* (1831) | MF CH-12 | 2,200 |
+| OPS-10 | The Creation | Haydn, *Die Schöpfung* (1798) | MF CH-14 | 3,500 |
+| OPS-11 | Don Giovanni | Mozart, *Don Giovanni* (1787) | Schl. CH-14 | 3,800 |
+| OPS-12 | Ninth Symphony | Beethoven, Symphony No. 9 (1824) | MF CH-14 | 4,200 |
+| OPS-13–24 ✦ | Future Scores (REP-17, REP-35–45, CANON §15d) | — | Transcribed free at the Lectern skills_and_progression §4.2 names: OPS-14 CH-05 (Hôtel de la Lyre), OPS-16 CH-06 (Trois Moulins), OPS-17 CH-07 (P15 anteroom), OPS-15 CH-08 (quay, *La Mouette*), OPS-23 CH-08 (P19), OPS-18 CH-10 (first W02 Lectern), OPS-19 CH-11 (Goldenen Anker), OPS-13 and OPS-20 CH-12 (P26 abbey and dome), OPS-22 CH-13 (*La Lumière*'s gondola), OPS-21 CH-14 (P32), OPS-24 CH-15 (Party 2's first P29 Lectern). Secrecy +3 per transcription with a non-confidant in the party (CANON §11c) | — |
+| OPS-25 | Lost Era | Kang Min-jun, *Concerto "Lost Era"* (REP-27) | BOSS-17 cleared with Own Voice ≥ 6 (CANON §11g) | — |
+| OPS-26 | Devin du Village | Rousseau, *Le Devin du village* (1752) | BOSS-40, CH-14 (missable) | — |
+| OPS-27 | Wellington | Beethoven, *Wellingtons Sieg* (1813) | BOSS-38, CH-14 or CH-E2 (SQ-23) | — |
+| OPS-28 | Caprice No. 24 | Paganini, Caprice No. 24 (1820) | BOSS-36, CH-14 (missable) | — |
+| OPS-29 | Oberon | Weber, *Oberon* (1826) | BOSS-37, CH-11 or CH-14 | — |
+| OPS-30 | Barricades | F. Couperin, *Les Barricades mystérieuses* (1717) | BQ-PC08 finale, CH-14 | — |
+| OPS-31 | Art of Fugue | J. S. Bach, *Die Kunst der Fuge* (1751) | BOSS-31, CH-E1 (other branch via Reverie) | — |
+| OPS-32 | Unfinished | Schubert, Symphony in B minor, D. 759 (1822) | BOSS-34, CH-E2 (other branch via Reverie) | — |
 
-*Why these secret titles:* each answers its boss: a virtuoso's caprices for Paganini's Echo, a winter journey for the Rhine's grief, Rousseau's own opera for the philosopher who wrote it, Maelzel-era mechanical bombast for Archon's war engine, the year turning for the Needle's cycling Light, an unfinished fugue for the history that didn't happen. The ✦ trigger chapters copy CANON §15d.
+**Stock windows** (skills_and_progression §3.6): restocks after the CH-07 duel, in CH-08, on the CH-12 return and in CH-14; no Score is sold in CH-10–CH-11 (the party is out of Paris) or on the single gala day of CH-13. The two Score counters also sell gifts and Folios (§10.6). Period prices sit below the CANON §14 relic band of their tier because a Score is a fifth purchase on top of the kit; §13 counts them in the affordability check as an optional sink, not as kit.
 
 ---
 
@@ -623,3 +634,364 @@ Favourites are canon (CANON §11f); Liked and Disliked lists and reactions are s
 | JU | 653 Naples Coffee (Café des Trois Dièses, 2, CH-14) · 654 Metronome (Pleyel showroom, 30, CH-14) · 655 Song Sheet (find Trois Dièses cloakroom, CH-08+) | 656 Bass String (Schlesinger's, 4) · 657 Staff Paper (Schlesinger's, 2) · 658 Absinthe (Trois Dièses, 3) | 659 Laurel Wreath (Mélie, P32, 2) · 660 Fan Letter (find P16, free) |
 
 *Absinthe* and *Tokaji Wine* are tavern-and-salon alcohol within the T rating (CANON §16e); neither has a battle use. *Le Globe* stopped in April 1832, so Pradel sells a back number.
+## 10. Shop Inventories by Chapter
+
+### 10.1 Rules
+
+- **Names and places** are CANON §12's; **opening windows** follow overworld_and_towns §2.2 (which districts the party can walk into each chapter); **prices** are those of §3–§6 and sit in the CANON §14 band of the tier in which the item is first sold. Source columns in §3–§6 name an item's *first* shop; this section lists every chapter it is on sale.
+- **Stock carries forward.** Each row adds to the row above. A tier's standard "[Tier] [Class]" line stays on sale through the next tier and then drops; named weapons and armour drop when the next tier's chapters end; **consumables, relics and gifts never drop**. Stock is unlimited (FF6 rule) unless a row says "one".
+- **Paris is shut to the party in CH-10–CH-13** (the tour, then a city held by the Grey Hand). Concerto-tier gear is therefore sold on the road in CH-10–CH-11 (§10.7) and found in CH-12–CH-13 dungeons (§11.5); Paris counters jump to Symphonie stock in CH-14 and keep the Concerto standard line as the "previous tier", so a party that skipped the road shops can still catch up.
+- **Rejoin kit (CH-12).** Berlioz and Delacroix, who stayed in Paris through CH-10–CH-11, rejoin wearing the Concerto standard weapon of their class (ITM-168, ITM-198) and a Concerto Coat (ITM-463) **if** the slot they left holds something weaker; they shopped while the party toured. Nothing is added to the inventory, so the rule creates no resale.
+- **Lucile haggles** (CANON §5d): with her in the active party, Couleurs Ravenel and Curiosités Corbel (her employer) sell at **−10%**, rounded half up to the franc. Not while her BP is frozen (CH-09 dawn to Mending 2), not in Seoul.
+- **Secrecy refusals** (CANON §11e): at Compromised (80–99) Vidal & Fils refuses service ("Monsieur is not received."); Curiosités Corbel trades through its back-lane counter at full stock and price (overworld_and_towns §4.3; see the cross-doc note on secrecy_and_trust §2.9.2). Every other shop always sells.
+- **Selling:** any shop buys any sellable item at ⌊50%⌋ of list (§1); Seoul shops pay in won at ₩200 per franc of list.
+
+### 10.2 Shop roster and windows
+
+| Shop | LOC | Keeper | Open | Sells |
+|---|---|---|---|---|
+| Armurerie Vidal | P03, rue Bergère | Joseph Vidal (TF-006) | CH-02–CH-09, CH-14, CH-E2 | Standard Batons, Sword-canes, Rapiers, Hammers, Quills, Sabres; standard armour |
+| Vidal & Fils | P14, rue du Bac corner | Augustin Vidal (TF-021) | CH-05–CH-09, CH-14, CH-E2 | Named weapons and armour, two relics |
+| Coutellerie du Palais | P16, the arcades | Mme Héloïse Bastien (TF-027) | CH-08–CH-09, CH-14, CH-E2 | Sword-canes, Hammers, Sabres, Canes, fencing gear |
+| Couleurs Ravenel | P22, head of rue de Seine | Mlle Adèle Ravenel (TF-035) | CH-05–CH-09, CH-14, CH-E2 (and the E02 easel) | Brushes, pigments |
+| Curiosités Corbel | P21, rue Dauphine | Anselme Corbel (FIC-04) | CH-04–CH-09, CH-14, CH-E2 | Relics, battle items, curios |
+| Pharmacie Laborde | P02 (Basile, TF-002) from CH-02; P10 (Émile, TF-017) from CH-05 | as named | CH-02–CH-09; CH-11 (P02, Lucile's interlude); CH-12 (P02 night bell, P10); CH-13 (P10); CH-14; CH-E2 | Consumables, battle items |
+| Mère Gaudin's counter | P04 | FIC-02 | CH-02–CH-09, CH-14, CH-E2 | Tisane, Café Noir; the inn |
+| Maison Farrenc | P19 (from P10) | Aristide Farrenc (NPC-20) | CH-05–CH-09, CH-12, CH-14, CH-E2 | Period Scores (§8), Folios, gifts; press rebuttal |
+| Schlesinger's | P10, rue de Richelieu | Maurice Schlesinger (NPC-41) | CH-06–CH-09, CH-12, CH-14, CH-E2 | Period Scores (§8), gifts |
+| Pleyel workshop | P12 | Camille Pleyel (NPC-15) | CH-07–CH-09, CH-14 (Voicing); CH-E2 (Voicing, keepsake forge) | Services (§2.4, §2.5) |
+| Mercerie Aubert (CCR) | R04 La Châtre | Mme Aubert (TF-057) | CH-10 | Consumables, travel clothes |
+| Coutellerie Lambotte (CCR) | R06 Liège | M. Lambotte (TF-060) | CH-11 | Concerto weapons (every Paris class but Brushes), armour |
+| Farbenhandlung Weiss (CCR) | R07 Düsseldorf | Herr Weiss (TF-063) | CH-11, CH-14 | Brushes, relics |
+| Pharmacie du Dôme (CCR) | R10 Strasbourg | M. Wendling (TF-066) | CH-11, CH-14 | Consumables |
+| Haneul Mart | S03, S04 (ground floor), S07, S12 | Jun-ho (TF-074) at S03 | CH-E1 | Consumables, one relic |
+| Kang Piano Service | S15 | Kang Do-hyun (FIC-10) | CH-E1 | Seoul weapons, Voicing |
+| Gyeoul Outfitters (CCR) | S07 | shop clerk (Tier C) | CH-E1 | Head and body gear, one relic |
+| Hanji-bang (CCR) | S12 | shop owner (Tier C) | CH-E1 | Brushes, relics |
+| Mr. Baek's coin shop | S12 | TF-081 | CH-E1 | Buys francs at ₩200 each (CANON §14); sells nothing |
+| Atelier stations | E02 (restored only) | — | CH-E2 | Piano: Voicing; easel: Ravenel's CH-E2 list plus ITM-474 |
+
+### 10.3 Weapons and armour
+
+**Armurerie Vidal (P03).**
+
+| Chapter | Weapons | Armour and other |
+|---|---|---|
+| CH-02 | Étude Baton 60 · Étude Sword-cane 80 | Étude Cap 45 · Étude Coat 80 |
+| CH-03 | + Prélude Baton, Prélude Sword-cane, Prélude Rapier 220 each | + Prélude Hat 160 · Prélude Coat 240 |
+| CH-04 | + Malacca Sword-cane 380 · Prélude Hammer 220 | + Felt Beret 280 · Smock of Daubrée's 300 |
+| CH-05 | + Nocturne Baton, Nocturne Sword-cane, Nocturne Rapier, Nocturne Hammer 560 each; Étude line drops | + Nocturne Hat 380 · Nocturne Coat 520; Étude armour drops |
+| CH-06 | + Nocturne Quill 560 | — |
+| CH-07 | + Nocturne Sabre 560 | — |
+| CH-08–CH-09 | + Rhapsodie Baton, Rhapsodie Sword-cane, Rhapsodie Rapier, Rhapsodie Quill 1,150 each; Prélude line and Malacca drop | + Rhapsodie Hat 820 · Rhapsodie Coat 980 · Quill Knife 4 (gift); Felt Beret and Smock drop |
+| CH-14 | Concerto Baton, Concerto Sword-cane, Concerto Rapier, Concerto Quill 2,100 each (previous tier) · Symphonie Baton, Symphonie Rapier, Symphonie Quill 3,900 each | Concerto Hat 1,500 · Concerto Coat 1,700 · Symphonie Hat 2,800 · Symphonie Coat 3,000 · Quill Knife 4 |
+| CH-E2 | Symphonie Baton, Rapier, Quill 3,900 each · Magnum Baton, Magnum Rapier, Magnum Quill 5,600 each | Symphonie Hat 2,800 · Symphonie Coat 3,000 · Magnum Hat 4,000 · Magnum Coat 4,200 · Quill Knife 4 |
+
+**Vidal & Fils (P14).** Refuses service at Compromised.
+
+| Chapter | Weapons | Armour, relics, gifts |
+|---|---|---|
+| CH-05 | Nocturne Baton, Sword-cane, Rapier, Hammer 560 each (the Faubourg pays the same as the students, whatever Augustin says) | Nocturne Hat 380 · Nocturne Coat 520 · Beaver Top Hat 780 · Poke Bonnet 760 · Spencer Jacket 680 |
+| CH-06 | + Nocturne Quill 560 | + Redingote 800 · Silk Cravat 10 |
+| CH-07 | + Ebony Baton, Dandy's Sword-cane, Salon Épée, Forge Hammer, Steel Nib, Hussar Sabre 980 each | + Dancing Pumps 1,800 · Moroccan Silk 1 (window scarf, sold after CH-07) |
+| CH-08 | Nocturne line moves to Armurerie Vidal only | + Moiré Gown 1,050 |
+| CH-09 | + Silver Baton 1,380 | + Lace Cap 1,100 |
+| CH-14 | Palais Rapier, Polonaise Quill 5,100 each; CH-05–CH-09 weapons and armour drop | Astrakhan Hat 3,600 · Silk Bonnet 3,800 · Velvet Gown 4,000 · Dancing Pumps 1,800 · Silk Cravat 10 · Moroccan Silk 1 |
+| CH-E2 | + Ivory Baton, Missolonghi Rapier, Fantaisie Quill 6,900 each | + Laurel Circlet 4,900 · Winter Bonnet 5,000 · Dress Coat of 1834 5,200 · Medal of 1834 9,800 |
+
+**Coutellerie du Palais (P16).**
+
+| Chapter | Weapons | Armour |
+|---|---|---|
+| CH-08 | Rhapsodie Sword-cane, Rhapsodie Hammer, Rhapsodie Sabre 1,150 each | Rhapsodie Hat 820 · Rhapsodie Coat 980 · Fencing Mask 1,050 · Fencing Jacket 1,100 |
+| CH-09 | + Fantastique Sabre 1,380 | — |
+| CH-14 | Concerto Sword-cane, Concerto Hammer, Concerto Sabre 2,100 each (previous tier) · Symphonie Sword-cane, Symphonie Hammer, Symphonie Sabre, Symphonie Cane 3,900 each · Waverley Cane, Machine Hammer, Ivory-Knob Cane 5,100 each | Symphonie Hat 2,800 · Symphonie Coat 3,000 · Greatcoat 3,800 |
+| CH-E2 | Symphonie line as CH-14 · Magnum Sword-cane, Magnum Hammer, Magnum Sabre, Magnum Cane 5,600 each · Sabbath Cane, Ostinato Hammer, Magyar Sabre 6,900 each | Magnum Hat 4,000 · Magnum Coat 4,200 · Cuirassier's Vest 5,200 |
+
+### 10.4 Brushes and relics
+
+**Couleurs Ravenel (P22).** −10% with Lucile in the active party. From the CH-09 dawn the counter line changes (WS-11, overworld_and_towns): Mlle Ravenel asks after her.
+
+| Chapter | Stock |
+|---|---|
+| CH-05 | Nocturne Brush 560 · Prussian Blue 6 · Madder Lake 5 |
+| CH-07 | + Kolinsky Filbert 980 |
+| CH-08–CH-09 | + Rhapsodie Brush 1,150 · Badger Blender 1,380 |
+| CH-14 | Concerto Brush 2,100 (previous tier) · Symphonie Brush 3,900 · Prussian Blue 6 · Madder Lake 5 |
+| CH-E2 | Symphonie Brush 3,900 · Magnum Brush 5,600 · Lumière Sable 6,900 · pigments. The restored E02 easel sells the same list plus Atelier Smock 5,000 |
+
+**Curiosités Corbel (P21).** −10% with Lucile; back-lane counter at Compromised. Relics never leave the shelf once stocked.
+
+| Chapter | Added stock |
+|---|---|
+| CH-04 | Courier's Boots 450 · Opera Glass 600 · Fencing Glove 750 · Lampblack Pouch 45 · Spinning Top 3 · Painted Fan 4 · Snuffbox 15 |
+| CH-05 | Practice Mute 1,600 · Rosin Cake 1,200 · Hourglass Sand 40 |
+| CH-06 | Watch Lantern 1,500 · Mechanical Toy 12 · Pocket Mirror 6 |
+| CH-07 | Leyden Jar 120 · Watch Movement 20 |
+| CH-08 | Copal Varnish 2,200 · Tortoise Fan 2,000 · Mesmer's Magnet 60 · Victorine's Gift (Zoé's child's fan) 5 |
+| CH-09 | Postilion Boots 2,400 · Tocsin Bell 80 |
+| CH-14 | Steel Busk 2,800 · Lodestone Charm 2,800 · Huntsman's Horn 3,000 · Smith's Wristband 3,400 · Gilder's Leaf 3,800 · Academy Medal 4,000 · Ivory Hairpin 4,200 · Venetian Mirror 6,500 · Encore Locket 7,800 · Ruggieri Rocket 300 · Bellows Charge 300 · Ruggieri Bouquet 1,200 · Galvanic Pile 1,200 |
+| CH-E2 | Laurel Ring 11,000 |
+
+### 10.5 Consumables
+
+**Pharmacie Laborde (P02 and P10; one stock list).** The boulevard branch adds its dandy's shelf from CH-05: Hair Pomade 4 · Black Tea 3 · Perfume Flask 15.
+
+| Chapter | Added stock |
+|---|---|
+| CH-02 | Tisane 8 · Café Noir 30 · Sal Volatile 40 · Smelling Salts 10 · Four Thieves 15 · Eyewash 10 · Throat Lozenge 12 · Squib 15 |
+| CH-03 | Courage Draught 25 · Barley Sugar 12 |
+| CH-04 | Pitch Pipe 40 |
+| CH-05 | Bouillon 40 · Vichy Water 120 · Beeswax Candle 70 |
+| CH-06 | Sculptor's Oil 60 |
+| CH-07 | Eau de Mélisse 90 · Glacière Ice 120 |
+| CH-08 | Panacea 300 · Hoffmann's Drops 30 · Seltzer Siphon 120 |
+| CH-11 | P02 only, during Lucile's interlude: Cordial 180 (her one chance to stock up alone) |
+| CH-12 | Cordial 180 · Chocolat 150 · Grand Vichy 400 · Valerian Tincture 80 · Picnic Hamper 400 |
+| CH-14 | Grand Cordial 600 · Sel de Vie 1,500 · Smelling Bottle 450 · Café Royal 900 |
+
+**Mère Gaudin's counter (P04):** Tisane 8 · Café Noir 30, from CH-02; plus the free Tisanes of `byt_boil_water` (§6.1). **Street sellers** (each a single examine-and-buy point, overworld_and_towns §5): Hot Chestnuts 2 (P22 quay, CH-03+) · Valencia Oranges 1 (P20 landing, CH-05+) · Parma Violets 1 (Pont Neuf barrow, CH-06+) · Gingerbread 2 (Polish émigré stall, P22, CH-06+) · Kid Gloves 12 (Passage de l'Opéra glover, CH-06+). Every other gift vendor and price is in §9.
+
+### 10.6 Music counters (non-Score stock)
+
+**Maison Farrenc (P19).** Press rebuttal 500 F, once per chapter (CANON §11e).
+
+| Chapter | Added stock |
+|---|---|
+| CH-06 | Bach Fugues 15 |
+| CH-08 | Rhapsodie Folio 1,150 · Couperin Edition 40 · Bach WTC Edition 30 |
+| CH-09 | Engraver's Folio 1,380 |
+| CH-12 | Concerto Folio 2,100 · Copperplate Folio 2,800 |
+| CH-14 | Symphonie Folio 3,900 · Hummel Folio 5,100; Rhapsodie Folio and Engraver's Folio drop |
+| CH-E2 | Magnum Folio 5,600 · Overture Folio 6,900 (sold off the drying rack beside the Overture No. 1 proofs); Concerto Folios drop |
+
+**Schlesinger's (P10).** CH-06: Orchestra Paper 6 · Guitar Strings 3 · Rossini Score 8 · Mozart Score 8 · Kalkbrenner Book 6 · Military March 2. CH-08: + Haydn Quartets 12 · Bass String 4 · Staff Paper 2.
+
+### 10.7 Regional shops (CH-10, CH-11, CH-14; CCR, fallback §10.8)
+
+| Shop | Chapter | Stock |
+|---|---|---|
+| Mercerie Aubert (R04) | CH-10 | Tisane 8 · Bouillon 40 · Cordial 180 · Café Noir 30 · Chocolat 150 · Sal Volatile 40 · Smelling Salts 10 · Four Thieves 15 · Eyewash 10 · Throat Lozenge 12 · Pitch Pipe 40 · Panacea 300 · Picnic Hamper 400 · Concerto Hat 1,500 · Concerto Coat 1,700 · Berry Smock 2,200 |
+| Coutellerie Lambotte (R06) | CH-11 | Concerto Baton, Concerto Sword-cane, Concerto Rapier, Concerto Hammer, Concerto Quill, Concerto Sabre, Concerto Folio 2,100 each · Rehearsal Baton, Francs-juges Cane, Sardanapalus Rapier, Liège Hammer, Mazurka Quill, Liège Sabre 2,800 each · Concerto Hat 1,500 · Concerto Coat 1,700 · Rhine Cap 2,200 · Travelling Cloak 2,300 · Buff Coat 2,600 · Steel Busk 2,800 |
+| Farbenhandlung Weiss (R07) | CH-11 | Concerto Brush 2,100 · Munich Sable 2,800 · Pelisse Hood 2,400 · Lodestone Charm 2,800 · Huntsman's Horn 3,000 · Smith's Wristband 3,400 · Gilder's Leaf 3,800 · Academy Medal 4,000 · Ivory Hairpin 4,200 · Bellows Charge 300 |
+| Farbenhandlung Weiss (R07) | CH-14 | + Symphonie Brush 3,900 · Venetian Mirror 6,500 |
+| Pharmacie du Dôme (R10) | CH-11 | Tisane 8 · Bouillon 40 · Cordial 180 · Café Noir 30 · Chocolat 150 · Sal Volatile 40 · Smelling Salts 10 · Four Thieves 15 · Eyewash 10 · Throat Lozenge 12 · Pitch Pipe 40 · Panacea 300 · Hoffmann's Drops 30 · Valerian Tincture 80 · Picnic Hamper 400 |
+| Pharmacie du Dôme (R10) | CH-14 | + Grand Cordial 600 · Sel de Vie 1,500 · Café Royal 900 |
+
+Lambotte's and Weiss's CH-11 counters are where the tour buys ahead for the three friends who are not on it (Berlioz, Delacroix, Lucile): the cursor shows a ghost portrait for any absent member who can equip the item, and the price line reads "for Paris". R04 and R06 close after their chapter (overworld_and_towns §2.4); R07 and R10 reopen in CH-14.
+
+### 10.8 Seoul shops (CH-E1) and the CCR fallback
+
+| Shop | Stock (won) |
+|---|---|
+| Haneul Mart (S03, S04, S07, S12) | Barley Tea 1,500 · Gimbap 8,000 · Ssanghwa Tonic 36,000 · Abalone Porridge 120,000 · Canned Coffee 6,000 · Red Ginseng Shot 30,000 · Ammonia Inhalant 8,000 · Wild Ginseng Root 300,000 · Eye Drops 2,000 · Throat Spray 2,400 · Pocket Tuner 8,000 · Cold Medicine 60,000 · Hot Pack 18,000 · Lunchbox Set 80,000 · Hand Warmer 1,600,000 |
+| Ms. Bae's cart (S03) | Hotteok 2,000 |
+| Kang Piano Service (S15) | Graphite Baton 1,120,000 · Ash Baton 1,380,000 · Pernambuco Bow 1,380,000 · Birch Gungchae 1,380,000 · Voicing (§2.4, list price × 200) |
+| Gyeoul Outfitters (S07, CCR) | Beanie 800,000 · Winter Parka 880,000 · Earmuffs 960,000 · Long Padding 1,040,000 · Headphones 2,000,000 |
+| Hanji-bang (S12, CCR) | Synthetic Flat 1,120,000 · Weasel-Hair But 1,380,000 · Norigae Tassel 1,600,000 · Lucky Pouch 1,700,000 |
+
+Seoul shops take only won; francs become won at Mr. Baek's (₩200 per franc, CANON §14). Paying with 1833 coins in public is a Spotlight raise (+3, CANON §11e), so no counter accepts them.
+
+**Fallback if the new-shop CCR (overworld_and_towns) is refused.** No item, price or window changes; only the counter's name does, to a canon name. Mercerie Aubert's stock is sold at the Auberge du Lion d'Argent's counter (R04); Lambotte's in the yard of the Hôtel de la Meuse (R06); Weiss's at the Gasthof zum Goldenen Anker (R07); the Pharmacie du Dôme's at the Hôtel de la Cathédrale (R10); Gyeoul Outfitters' and Hanji-bang's head, body and relic stock at Haneul Mart's S07 and S12 branches; Hanji-bang's two brushes at Kang Piano Service.
+
+### 10.9 Inns and paid services
+
+| Chapter (tier) | Inn night (CANON §14) | Inns open |
+|---|---|---|
+| CH-02 (Étude) | 10 F (*Au Diapason Fêlé* free with KEY-06) | P02 Lys d'Or, P04 |
+| CH-03–CH-04 (Prélude) | 15 F | + — |
+| CH-05–CH-07 (Nocturne) | 25 F | + P10 Lyre, P24 Trois Moulins (CH-06) |
+| CH-08–CH-09 (Rhapsodie) | 40 F | + P16 Arcades |
+| CH-10–CH-13 (Concerto) | 60 F | R04 Lion d'Argent (CH-10), R06 Meuse, R07 Goldenen Anker, R10 Cathédrale (CH-11), P02 and P10 (CH-12–CH-13) |
+| CH-14–CH-15 (Symphonie) | 100 F | every Paris inn, R07, R10 |
+| CH-E2 (Opus Magnum) | 150 F (the Atelier and Marthe's dispensary rest free) | every Paris inn |
+| CH-E1 (Seoul) | ₩60,000 at Hotel Ginkgo (CCR, only while the S04 lobby is blocked) | S03 |
+
+**Paid services cited here for the economy check (§13), owned elsewhere:** Voicing (§2.4); press rebuttal 500 F (CANON §11e); SQ-07 step 2, Théo's convalescence, 300 F (LAW-23); SQ-12 the Atelier 5,000 F (CANON §0c) or the CH-E2 restoration 5,000 F (CANON §12); fiacre 2 F, omnibus 6 sous, barge 1 F, diligence 40–120 F a leg (CANON §11h, overworld_and_towns §2.3–§2.4); the keepsake forge is free (§2.5).
+
+---
+
+## 11. Rare Items: Steals, Drops, Duel Prizes, Finds
+
+### 11.1 Family loot (binding item lists; the bestiary assigns them per ENM)
+
+Every ENM carries a common and a rare steal (CANON §11a) and a common and a rare drop. The bestiary gives each ENM its family's four items below; where a family spans two tiers it may use the second line from the chapter shown. Odds: steal clamp(40 + LCK_a − LCK_t, 5, 95)% with 1 success in 8 rare and the 8th-success pity; drops rare clamp(4 + ΔLCK/4, 2, 16)%, then common 35% (formulas_and_curves §5.4–5.5). Names are UI names; ITM numbers are in §3–§6.
+
+| Family (CANON §12) | Where, when | Common steal | Rare steal | Common drop | Rare drop |
+|---|---|---|---|---|---|
+| Ossuary Echoes | P01 CH-01; Z1 strays CH-02–CH-04 | Tisane | Sal Volatile | Smelling Salts | Beeswax Candle |
+| Lime Wraiths | P01 | Four Thieves | Eyewash | Four Thieves | Sal Volatile |
+| Quarry rats, rats, sewer rats | P01, P04, P17, Z1, Z7 | Tisane | Squib | Tisane | Café Noir |
+| Miasma Wraiths | Z1, Z3, Z7 (CH-02+) | Four Thieves | Eau de Mélisse | Four Thieves | Courage Draught |
+| Gros-Louis's smugglers | P04 cellars, CH-02 | Café Noir | Squib | Tisane | Sal Volatile |
+| Choir Echoes | P03 undercroft, CH-03 | Throat Lozenge | Pitch Pipe | Throat Lozenge | Courage Draught |
+| Black Coats | P08, Z4, CH-04 | Courage Draught | Fencing Glove | Tisane | Lampblack Pouch |
+| Tocsin Echoes | P08; Z4 night CH-05+ | Eyewash | Tocsin Bell | Eyewash | Pitch Pipe |
+| Gaslight Wisps | P10; Z2, Z5 night (CH-05+) | Eyewash | Leyden Jar | Beeswax Candle | Rosin Cake |
+| Pickpocket gangs | P10, Z2, Z4–Z6 | Café Noir | Courier's Boots | Bouillon | Opera Glass |
+| Gargoyle Echoes | Z3 (Cité) | Sculptor's Oil | Lampblack Pouch | Sculptor's Oil | Opera Glass |
+| Watchers (secrecy_and_trust §2.8) | Town maps CH-06+; informants to CH-08, Grey Hand lookouts after | Café Noir | Opera Glass | Eyewash | Courier's Boots |
+| Tableau Echoes | P13, CH-06 | Sculptor's Oil | Madder Lake | Bouillon | Hourglass Sand |
+| Brücke Mk. I automata | P18, CH-07 | Hourglass Sand | Brass Escapement | Leyden Jar | Brass Escapement |
+| Cloaca Echoes | P17, CH-08 | Four Thieves | Seltzer Siphon | Four Thieves | Panacea |
+| Phantom Quartet spectres | P17 | Hoffmann's Drops | Bass String | Hoffmann's Drops | Rosin Cake |
+| Julien's café toughs | P17; P16 night | Café Noir | Absinthe | Bouillon | Fencing Mask |
+| Grey Hand | P31 CH-09, P26, P27; Z6 night and W01 Shadow formations CH-09+ | Bouillon (Cordial from CH-12) | Grey Kid Glove | Sal Volatile | Panacea |
+| Barrel automata | P31 | Hoffmann's Drops | Brass Escapement | Seltzer Siphon | Tocsin Bell |
+| Hunter Automata | R01, R05, Y2, Y3, Y8 | Cordial | Huntsman's Horn | Leyden Jar | Steel Busk |
+| Boar | Y1–Y3 | Bouillon | Cordial | Hot Chestnuts | Cordial |
+| Frontier smugglers | Y4, Y5, Y7, Y8, R13 | Café Noir | Tokaji Wine | Cordial | Lodestone Charm |
+| River automata | R08, Y5, Y6 | Seltzer Siphon | Brass Escapement | Glacière Ice | Bellows Charge |
+| Lorelei Echoes | R09, Y6 | Smelling Salts | Eau de Mélisse | Smelling Salts | Valerian Tincture |
+| Abbey Echoes | P26, CH-12 | Throat Lozenge | Chocolat | Cordial | Sel de Vie |
+| Living Tableaux (and CH-E2 squads) | P26 CH-12; CH-E2 streets, E01, E05 | Sculptor's Oil (Grand Cordial in CH-E2) | Gilder's Leaf | Cordial (Smelling Bottle in CH-E2) | Tableau Rapier |
+| Grey Hand assassins | P27, CH-13 | Cordial | Grey Kid Glove | Panacea | Tocsin Bell |
+| Stage-machinery automata | P27; W01 war strays CH-14 | Leyden Jar | Brass Escapement | Leyden Jar | Ruggieri Rocket |
+| Roussel's Cleaners | P34; W01 war overlay, CH-14 | Cordial | Garde Gorget | Panacea | Smelling Bottle |
+| Vane's animated collection | P34 | Sculptor's Oil | Venetian Mirror | Chocolat | Gilder's Leaf |
+| Forge automata | R02, CH-14 and CH-E2 | Grand Cordial | Smith's Wristband | Galvanic Pile | Cuirassier's Vest |
+| Amalgam Echoes (Lutèce constructs, turnstile golems, neon wraiths) | P29, CH-15 | Grand Cordial | Élixir | Smelling Bottle | Clef Chip |
+| Grey Hand elite | W01 Shadow formations CH-09+; P30, CH-16 | Sel de Vie | Grey Kid Cap | Grand Cordial | Grey Kid Glove |
+| Stilled Echoes | P30, CH-16 | Smelling Bottle | Élixir | Café Royal | Élixir |
+| Residual Echoes | CH-E2 streets, E03 | Smelling Bottle | Élixir | Café Royal | Élixir |
+| Leftover automata | CH-E2 streets, E05 | Galvanic Pile | Brass Escapement | Grand Vichy | Smith's Wristband |
+| Static automata | S08; W03 static pockets, CH-E1 | Pocket Tuner | Headphones | Canned Coffee | Hand Warmer |
+| Ossia phantoms | S09, CH-E1 | Red Ginseng Shot | Élixir | Wild Ginseng Root | Élixir |
+
+*Absinthe* and *Tokaji Wine* are gift items (§9) with no battle use; a café tough's flask and a smuggler's cask are where a T-rated game keeps its alcohol (CANON §16e).
+
+### 11.2 Boss rewards (guaranteed) and boss steals (for bosses.md)
+
+The guaranteed reward is binding here for its item; `bosses` fixes everything else about the fight. The steal column is this doc's proposal for each boss's Libretto `STEAL` line (bosses.md may adopt or replace it, never with an item outside this doc). Duel-format and invulnerable bosses have no steal.
+
+| BOSS | Guaranteed item reward | Steal: common / rare |
+|---|---|---|
+| BOSS-01 Ossuary Warden | Sal Volatile ×2 | Tisane / Beeswax Candle |
+| BOSS-02 Gros-Louis | The stolen francs back (CANON §13); Squib ×3 | Café Noir / Courier's Boots |
+| BOSS-03 Herz (duel) | Herz Medal (any result) | — |
+| BOSS-04 Le Chantre | Pitch Pipe ×2 · Throat Lozenge ×3 | Throat Lozenge / Felt Beret |
+| BOSS-05 Marlot | Fencing Glove · Courage Draught ×3 | Courage Draught / Opera Glass |
+| BOSS-06 Passage Chimera | Beeswax Candle ×3 | Eyewash / Rosin Cake |
+| BOSS-07 *The Raft* | Vichy Water ×3 | Sculptor's Oil / Eau de Mélisse |
+| BOSS-08 Thalberg (duel) | Won: Rossini's Napkin · lost: Three-Hand Glove | — |
+| BOSS-09 Escapement Hound | Brass Escapement | Leyden Jar / Practice Mute |
+| BOSS-10 Cloaca Leviathan | Seltzer Siphon ×3 | Four Thieves / Panacea |
+| BOSS-11 Julien | Hoffmann's Drops ×3 (KEY-15 by story) | Café Noir / Naples Coffee |
+| BOSS-12 Roussel I | Panacea ×2 | Bouillon / Grey Kid Glove |
+| BOSS-13 Le Meneur de Loups | Cordial ×3 · Leyden Jar ×2 | Cordial / Huntsman's Horn |
+| BOSS-14 The Rheinwolf | Glacière Ice ×3 | Seltzer Siphon / Brass Escapement |
+| BOSS-15 Delorme | Golden Compass | Sculptor's Oil / Gilder's Leaf |
+| BOSS-16 Archon: The Audience | — (survival) | — ("Nothing to take.") |
+| BOSS-17 Grand Concert: Stage | OPS-25 if Own Voice ≥ 6 (§8) | — |
+| BOSS-18 Brücke and the Phonautograph | Stopped Horn | Leyden Jar / Brass Escapement |
+| BOSS-19 Roussel II | Grey Kid Glove | Cordial / Grey Kid Cap |
+| BOSS-20 Lord Vane (duel) | Cambridge Sabre (§3.7: never missable) | — |
+| BOSS-21 Roussel and the Cleaners | Grand Cordial ×3 · Smelling Bottle ×2 | Grand Cordial / Garde Gorget |
+| BOSS-22 Warden of Lutèce | Lutèce Helm | Grand Cordial / Élixir |
+| BOSS-23 Warden of Hanseong | Frock of Hanseong | Smelling Bottle / Élixir |
+| BOSS-24 Orpheus Descending | Orpheus Mask | Smelling Bottle / Élixir |
+| BOSS-25 Ad Astra | Varga Lens | Café Royal / Élixir |
+| BOSS-26 Archon, Baron d'Orsenne | Élixir | Grand Cordial / Sel de Vie |
+| BOSS-27 The Stilled Hour | — | — (invulnerable until the Octave) |
+| BOSS-28 Archon and the Engine | Élixir ×2 (KEY-29 by story) | Café Royal / Élixir |
+| BOSS-29 Automaton "Line 2" | Pocket Tuner ×3 · Élixir | Canned Coffee / Hand Warmer |
+| BOSS-30 Elias Brandt | Élixir ×2 | Red Ginseng Shot / Headphones |
+| BOSS-31 Ossia | Sinmyeong · OPS-31 · the Baton of Tomorrow (§12.2) · Delorme's notebook page (LAW-27, lore) | Wild Ginseng Root / Élixir |
+| BOSS-32 The Salon Jury (duel) | KEY-40 (canon) | — |
+| BOSS-33 Delorme's Masterwork | Ground Lens | Grand Cordial / Laurel Circlet |
+| BOSS-34 The Unwritten | OPS-32 · the Baton of Tomorrow (§12.2) · Delorme's notebook page | Café Royal / Élixir |
+| BOSS-35 Thalberg rematch (duel) | §11.3 | — |
+| BOSS-36 Paganini's Shadow | Paganini String · OPS-28 | Café Royal / Rosin Cake |
+| BOSS-37 The Lorelei Echo | OPS-29 · Valerian Tincture ×3 | Smelling Salts / Eau de Mélisse |
+| BOSS-38 The Forge Colossus | OPS-27 · Cuirassier's Vest | Galvanic Pile / Smith's Wristband |
+| BOSS-39 The Needle Echo | Encore Locket | Grand Cordial / Élixir |
+| BOSS-40 The Philosophers' Echo | OPS-26 (from the second to fall) | Café Royal / Élixir (each) |
+| BOSS-41 "Hit" | First Hit: Brass Escapement; later Hits: Panacea | Leyden Jar / Brass Escapement |
+| BOSS-42 The Turnkey | Courage Draught ×2 | Bouillon / Grey Kid Cap |
+| BOSS-43 Da Capo: The Unstruck Bell | Unstruck Bell | Élixir / Laurel Ring |
+
+### 11.3 Duel, salon and busking prizes
+
+Salons and piano duels are this game's colosseum: no wager, but every named room pays once for a great evening.
+
+| Contest | Condition | Prize |
+|---|---|---|
+| BOSS-03 Herz cutting contest (CH-03) | Any result | Herz Medal (ITM-504) |
+| BOSS-08 Thalberg (CH-07) | Won / lost | Rossini's Napkin (ITM-510) / Three-Hand Glove (ITM-511) |
+| BOSS-20 Lord Vane (CH-14) | Won; if lost, found at P14 after WS-17 | Cambridge Sabre (ITM-288) |
+| BOSS-35 Thalberg rematch (CH-14 or CH-E2) | Won | Belgiojoso Cameo (ITM-535) if not owned; else Three-Hand Glove if not owned; else Grand Cordial ×3 |
+| SQ-20 The Salon Circuit (CH-14) | Completed | Belgiojoso Cameo (ITM-535) |
+| Salon Lavergne (T2, Romantic) | First optional salon with Rapture ≥ 90 | Gilt Lorgnette (ITM-546) |
+| Salon Bastide (T2, Novel) | Same | Feuilleton (ITM-547) |
+| Salon Merlin (T3, Romantic) | Same | Havana Mantilla (ITM-548) |
+| Salon d'Agoult (T3, Sacred) | Same | Ivory Missal (ITM-549) |
+| Countess Apponyi (T3, Virtuosic) | Same | Opal of Vienna (ITM-550) |
+| T1 *Au Diapason Fêlé* | First salon (CH-02) | Busker's Bowl (ITM-501) |
+| BOSS-17, BOSS-32 | Story results | OPS-25 (Own Voice ≥ 6); KEY-40 |
+
+**Busking ladder (CH-E1, 8 spots in CANON §4f order; one prize each, on first clear).**
+
+| Spot | Place | Prize |
+|---|---|---|
+| 1 | Hongdae station exit plaza (S07) | Hot Pack ×3 |
+| 2 | Hongdae walking-street stage | Red Ginseng Shot ×3 |
+| 3 | Hongdae playground corner | Pocket Tuner ×3 |
+| 4 | Insadong courtyard (S12) | Concert Pass (ITM-545) |
+| 5 | Yanghwajin riverside park (S14) | Wild Ginseng Root ×2 |
+| 6 | Namsan cable-car plaza | Headphones (ITM-543) |
+| 7 | Jeong-dong ginkgo road (S03) | Lucky Pouch (ITM-541) |
+| 8 | Bosingak plaza (S11): Legend | *Hanseong* (ITM-369, §12.5); the Remembrances rise to Lv 55 power (CANON §4f) |
+
+### 11.4 Unsold rarities
+
+| Item | Shop | Steal | Drop | Chest or find | Boss or prize |
+|---|---|---|---|---|---|
+| Élixir (ITM-007) | Never | Amalgam, Stilled, Residual Echoes; Ossia phantoms (rare); BOSS-22–25, 28, 31, 34, 39, 40 (rare) | Stilled, Residual Echoes; Ossia phantoms (rare) | R02 ×1, P29 ×2, P30 ×1, S08 ×1, E05 ×1 | BOSS-26 ×1, BOSS-28 ×2, BOSS-29 ×1, BOSS-30 ×2 |
+| Grey Kid Cap (ITM-415): **steal-only** | Never | Grey Hand elite (rare); BOSS-19, BOSS-42 (rare) | Never | Never | Never |
+| Garde Gorget (ITM-526): **steal-only** | Never | Roussel's Cleaners; BOSS-21 (rare) | Never | Never | Never |
+| Tableau Rapier (ITM-200): **drop-only** | Never | Never | Living Tableaux (rare) | Never | Never |
+| Clef Chip (ITM-536): **drop-only** | Never | Never | Amalgam Echoes (rare) | Never | Never |
+| Brass Escapement (ITM-525) | Never | Mk. I, barrel, river, stage and leftover automata (rare) | Mk. I automata (rare) | — | BOSS-09; first BOSS-41 |
+| Grey Kid Glove (ITM-524) | Never | Grey Hand, assassins (rare); BOSS-12 (rare) | Grey Hand elite (rare) | — | BOSS-19 |
+| Golden Lyre (ITM-537) | Never | — | — | S09 summit (CH-E1); E03 (CH-E2) | — |
+| Paganini String (ITM-531) | Never | — | — | — | BOSS-36 (BQ-PC07 climax; missable) |
+| Paving Stone (ITM-041) | Never | — | — | ×5 at P08 (CH-04) | — |
+
+Sel de Vie appears before its CH-14 shop debut only as an Abbey Echo rare drop (CH-12), and once as a find at P28 (CH-14, overworld_and_towns §5).
+
+### 11.5 Chests and finds by location (item lists for dungeons.md)
+
+`dungeons` places the tiles; this table fixes what is in them. Town examine points are overworld_and_towns §5's (its items are named from canon lists and numbered here); TUT pages and Study chests are skills_and_progression's.
+
+| LOC | Chapter | Contents |
+|---|---|---|
+| P01 Saint-Denis Galleries | CH-01 | Workman's Cap · Tisane ×3 · Sal Volatile |
+| P04 cellars | CH-02 | Cartouche Glove (canon) · Rome Sword-cane · Squib ×3 |
+| P03 undercroft | CH-03 | Prélude Hat · Courage Draught ×2 |
+| P08 Barricade | CH-04 | Paving Stone ×5 · Pitch Pipe ×2 |
+| P10 Passage de l'Opéra nest | CH-05 | Nocturne Coat · Beeswax Candle ×2 |
+| P13 Louvre | CH-06 | Copyist's Apron · Sculptor's Oil ×2 |
+| P18 Clockwork Undercroft | CH-07 | Leyden Jar ×2 · Hourglass Sand ×2 |
+| P17 Sewers | CH-08 | Chios Rapier · Seltzer Siphon ×2 · Panacea |
+| P31 Bercy | CH-09 | Silver Baton · Bouillon ×3 |
+| R01 Franchard gorge | CH-10 | Huntsman's Horn |
+| R05 Vallée Noire | CH-10 | Concerto Baton · Concerto Sabre · Cordial ×2 |
+| R08 *Concordia* | CH-11 | Seraing Maul (boiler deck) · Riverman's Oilskin |
+| R07 Academy library | CH-11 | Haydn Folio |
+| R09 Lorelei | CH-11 or CH-14 | Valerian Tincture ×2 |
+| P26 Val-de-Grâce | CH-12 | Palette Knife (abbey wing, Lucile's solo) · Ruggieri Rocket ×2 · Chocolat ×2 |
+| P27 Opéra | CH-13 | Gala Baton (corridors) · Rob Roy Cane (rafters) · Sylphide Gauze (rafters, Taglioni's dressing room) · Opéra Sabre (stage machinery) · Opera Hat (cloakroom) |
+| P34 Hôtel de Vane | CH-14 | Grand Cordial ×2 |
+| R02 Château d'Orsenne | CH-14 | Waverley Cane · Élixir |
+| P38 Philosophers' Tombs | CH-14 | Sel de Vie |
+| P29 Chrono-Labyrinth | CH-15 | Lutèce zones: Magnum Brush, Magnum Rapier, Magnum Folio · Hanseong zones: Magnum Baton, Magnum Quill · Orpheus zones: Magnum Sword-cane, Magnum Hammer, Magnum Sabre, Magnum Cane · each of the three zones and the Heart gate: Magnum Hat, Magnum Coat (4 of each) · Élixir ×2 |
+| P30 Heart Chamber | CH-16 | Élixir (before BOSS-26's Lectern) |
+| S08 Euljiro / Line 2 | CH-E1 | Élixir · Abalone Porridge ×2 |
+| S09 Namsan | CH-E1 | Golden Lyre (summit) |
+| E05 Delorme's Atelier | CH-E2 | Élixir · Grand Cordial ×2 |
+| E03 The Dead Heart | CH-E2 | Golden Lyre |
+
+The P29 and P30 Opus Magnum pieces exist because no shop opens between CH-14 and the finale (CANON §0c point of no return): the CH-16 four reach BOSS-26 with Opus Magnum weapons and armour, which the CANON §10e CH-16 row assumes.
+
+---
+

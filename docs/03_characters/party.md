@@ -2,7 +2,7 @@
 
 Status: v1.0 — 2026-10-06 · Owns: party members' biographies, appearance and sprite/portrait notes, personality, arcs, relationships, battle-identity overview, bond-arc overview (bond-quest beat outlines and rank-event titles), ending fates and credits afterwords for PC-01–PC-11, plus short dossiers for guests GST-01–GST-11 · Depends on: docs/02_lore/world_rules_and_lore.md (final); reads and stays consistent with dialogue_style_guide (format, voices), secrecy_and_trust (BP values, confession rules, Horizon wording), combat_ensemble (command rules), historical_cast (NPC ties), art_and_ui (sprite keys) · Canon: docs/00_CANON.md
 
-> **Related docs.** `skills_and_progression.md` and `side_and_bond_quests.md` did not exist when this file was written. Skill names below that are not already canon are **proposals** for skills_and_progression (which owns every HRM, ETU, STU and TUT number); bond-quest part titles and beats are this doc's (CANON §0b: "bond-quest beat outlines"), and side_and_bond_quests owns their full content and rewards. Where anything here seems to disagree with the canon, the canon wins.
+> **Related docs.** Every skill, Étude, Study and Tutti named below is taken from `skills_and_progression.md` (v1.0), which owns every HRM, ETU, STU, TUT and OPS number; this doc only selects each member's signature handful. `side_and_bond_quests.md` did not exist when this file was completed: bond-quest part titles, rank events and beats are this doc's (CANON §0b: "bond-quest beat outlines"), and side_and_bond_quests owns their full content, maps and rewards. Where anything here seems to disagree with the canon, the canon wins.
 
 ## Contents
 
@@ -29,10 +29,11 @@ Status: v1.0 — 2026-10-06 · Owns: party members' biographies, appearance and 
 ## 1. How to Read This Document
 
 - **Every section has the same spine:** header table → appearance → personality and backstory → want vs need → arc by chapter → defining scene → battle identity → bond questline → ending fates (both branches, LAW-24/25) → credits afterword (historical members only).
+- **Acts** (CANON §4a): Act I = CH-01–CH-04, Act II = CH-05–CH-09, Act III = CH-10–CH-13, Act IV = CH-14–CH-17, then the epilogue of the branch (CH-E1 or CH-E2). Each arc table runs chapter by chapter and is followed by a one-line **By act** summary.
 - **Facts come from CANON §3–§11.** Stats, join levels and grades are CANON §5b and are not repeated. Commands are CANON §5c; their battle rules are combat_ensemble §4.6. BP values, Evening counts and confession rules are secrecy_and_trust §3–§5.
 - **Defining scenes.** FF6 gives each member one scene the player remembers them by (Celes at the opera, Cyan's dream). Each member here has exactly one, and no two share a scene.
-- **Bond tables** list one headline event per rank. Standard bond quests (BQ-PC03, 05, 07, 08, 11) open Part 1 at R2, Part 2 at R4, Part 3 at R5, Part 4 at R7 and the finale at R9 (secrecy_and_trust §3.5); other ranks are headed by that member's Evening scene of the same number (Evening scene *n* needs R*n*). Mandatory bond quests (BQ-PC04, BQ-PC06) are story-placed and listed in order.
-- **Lantern Rule for the credits.** Tone Rule 6 forbids any friend's death on the ending roll. The afterwords in this file therefore narrate works and legacy only, with life dates in the header line, and are written for a proposed post-credits **Afterword** screen (CCR in the final section).
+- **Bond tables** list one headline event per rank. Standard bond quests (BQ-PC03, 05, 07, 08, 11) open Part 1 at R2, Part 2 at R4, Part 3 at R5, Part 4 at R7 and the finale at R9 (secrecy_and_trust §3.5); other ranks are headed by that member's Evening scene of the same number (Evening scene *n* needs R*n*). Mandatory bond quests (BQ-PC04, BQ-PC06) are story-placed and listed in order; their R7–R9 thresholds have no scene of their own, because the CH-09 finale sets 1000 BP whatever rank the member holds (secrecy_and_trust §3.1). A rank row marked "—" in the Event column is reached by BP alone, and the row says what it unlocks.
+- **Lantern Rule for the credits.** Tone Rule 6 forbids any friend's death on the ending roll. The afterwords in this file therefore narrate works and legacy only and are written for a proposed post-credits **Afterword** screen (CCR in the final section). Each is headed here with life dates for the writers; the screen itself shows the birth year alone and never states a death.
 - **Scripted lines** follow CANON §16a and dialogue_style_guide §2.2 (one line = one box; target ≤ 60 characters with a portrait). Every line here is original game dialogue; none is a quotation of a real person.
 
 ---
@@ -116,7 +117,7 @@ Five costume sets, chosen by chapter (CANON §5g; art_and_ui §4.2): **Modern** 
 
 Wry, self-deprecating, a watcher; kind by reflex, homesick by night; he hums *Arirang* when nervous and always names the composer ("It's Ravel's. Maurice Ravel. I only borrowed it."). He speaks of music in tempo, rests and cues, and of feelings almost never.
 
-**His own voice** (LM-02): pentatonic melody with Korean colour over gently modern harmony. He hears in parallel ninths like Debussy and thinks in long-short 12/8 lilts he caught from Jae-won's samulnori rehearsals, and he builds pieces from the left hand up. His three finished works chart his growth (CANON §5f): the *Concerto for Two Pianos "Lost Era"* (REP-27, CH-13), *La Musique des étoiles* (REP-29, written on the Panthéon roof, Wed 18 Dec 1833) and the finale of *Harmonies de l'ère perdue* (REP-28, epilogues). The hidden **Own Voice** tally (§11g) is his bond with himself.
+**His own voice** (LM-02): pentatonic melody with Korean colour over gently modern harmony. He hears in parallel ninths like Debussy and thinks in long-short 12/8 lilts he caught from Jae-won's samulnori rehearsals, and he builds pieces from the left hand up. His three finished works chart his growth (CANON §5f): the *Concerto for Two Pianos "Lost Era"* (REP-27, CH-13), *La Musique des étoiles* (REP-29, written on the Panthéon roof, Wed 18 Dec 1833) and the finale of *Harmonies de l'ère perdue* (REP-28, epilogues). The hidden **Own Voice** tally (CANON §11g) is his bond with himself.
 
 ### 3.4 Want vs need
 
@@ -147,6 +148,9 @@ For two acts Min-jun is the honest traveller among thieves: he names Ravel when 
 | CH-14 | The Vow; Night of Stars; writes *La Musique des étoiles* overnight |
 | CH-15–16 | Walks his own remembered Seoul; first voice of the Octave |
 | CH-17 | Farewells under the Window Clock; "Will you come with me?" |
+| CH-E1 / CH-E2 | Seoul: home, the premiere, Brücke freed by a promise, the portrait at 23:00. Paris: he stays because she asks, plays the finale from memory and never writes it down |
+
+**By act.** *I:* a refused foreigner survives on other men's music and finds a first friend. *II:* he becomes a salon sensation, names the Anachronists, and confides in the woman paid to report him. *III:* betrayed, hunted and injured, he learns that his own music is the only thing the cabal cannot steal. *IV:* he swears the Vow, writes the coda that holds the Window open, and asks the question. *Epilogue:* he answers "Where is home?" in one of two centuries.
 
 ### 3.7 Defining scene: "Eight Bars" (CH-13, Fri 6 Dec 1833)
 
@@ -158,20 +162,20 @@ The first performance of the first thing he has ever finished, before the King, 
 
 | Signature skill | Source | Concept |
 |---|---|---|
-| *Resonance* | REP-00 | A hummed tone that stuns Echoes and shatters bone walls |
-| *Clair de lune* | REP-01 | Cantabile → LIGHT +25% → party heal; the piece that started everything |
-| "Ondine" | REP-08 | WATER aura, enemy Lento → WATER burst |
-| "Scarbo" | REP-10 | SHADE aura → Delirium on all → SHADE storm |
-| *Vers la flamme* | REP-22 | Crescendo +20 per turn → FIRE/LIGHT nova (CH-16) |
-| *Concerto "Lost Era"* | REP-27 | His own: Heat 0 from CH-13 |
-| *La Musique des étoiles* | REP-29 | His own: Heat 0; the Window's music |
-| *Gaspard Unbound* | Cadenza | Ondine, Le Gibet, Scarbo in one breath |
+| *Resonance* | REP-00 | A hummed tone: I stuns every Echo, II shatters bone walls. The first thing he fights with |
+| *Clair de lune* | REP-01 | Cantabile → LIGHT +25% → party heal; the piece that started everything (Heat 3) |
+| The *Gaspard* triptych | REP-08, 09, 10 | "Ondine" (WATER aura, Lento → WATER burst), "Le Gibet" (RES −20% → Coda), "Scarbo" (SHADE aura → Delirium → SHADE storm): Vane's piece, at both ends of the game |
+| *Vers la flamme* | REP-22 | Crescendo +20 at each of Archon's turns → FIRE + LIGHT nova (CH-16) |
+| *A440* · *Overtone* · *Just Intonation* | HRM-PC01-01, -05, -08 | His own non-elemental tones: no resistance ever halves them; *A440* bites harder on Echoes |
+| *Ritardando* · *Tempus* · *Accelerando* | HRM-PC01-09–11 | CHRONO, learned by story in the labyrinth and at the instant the Stilled Hour breaks: the residue of having been its string (Heat 5) |
+| His own works | REP-27, 29, 30 | *Concerto "Lost Era"*, *La Musique des étoiles*, *Jeong-dong Nocturne*: Heat 0 from CH-13 (+3 Crescendo per movement until combat_ensemble's effect CCR is adopted) |
+| *Gaspard Unbound* | Cadenza | Ondine, Le Gibet, Scarbo in one breath (WATER, SHADE, SHADE); with 3 confidants a second phase: Delirium on all, party Allegro |
 
-**Best Synergy partners:** Lucile (SYN-01 *Clair de Lune Impression*), Chopin (SYN-03 advances his Recital), Berlioz (SYN-04, SYN-14), Liszt (SYN-02). **Play pattern:** open Movement I, Conduct Alkan (a Conducted Étude cannot fail) or Lucile (a Conducted IMPRESSION keeps its chain), keep Varnish on him so no single hit breaks the piece.
+**Best Synergy partners:** Lucile (SYN-01 *Clair de Lune Impression*), Chopin (SYN-03 advances his Recital), Berlioz (SYN-04, SYN-14), Liszt (SYN-02); Lucile and Delacroix together for SYN-13 *Brother from Tomorrow*. **Play pattern:** open Movement I, Conduct Alkan (a Conducted Étude cannot fail) or Lucile (a Conducted IMPRESSION keeps its chain), keep Varnish on him so no single hit breaks the piece. Against superbosses his tones and CHRONO are the bard's quiet answer: the one key bar 3 of BOSS-31 and BOSS-34 does not resist.
 
 ### 3.9 Bond arc
 
-Min-jun is the hub and has no bond rank (CANON §5d). His growth is tracked by **Own Voice** (0–10): +1 each time he plays REP-30 at a salon instead of a future piece, +1 at key arc choices. At 6 or more the CH-13 concerto gains its extended cadenza phase. His Lost Era baton (*Baton of Tomorrow*, Berlioz's CH-04 baton reforged by Théo) is earned by defeating BOSS-31 or BOSS-34.
+Min-jun is the hub and has no bond rank (CANON §5d). His growth is tracked by **Own Voice** (0–10): +1 each time he plays REP-30 at a salon instead of a future piece, +1 at key arc choices. At 6 or more the CH-13 concerto gains its extended cadenza phase, and Liszt hands him the annotated second-piano part afterwards: the secret Score OPS-25 *Lost Era*, whose exclusive *Second Piano* gives the whole party Swell +2 (skills_and_progression §4.3). His Lost Era baton (*Baton of Tomorrow*, Berlioz's CH-04 baton reforged by Théo) is earned by defeating BOSS-31 or BOSS-34.
 
 ### 3.10 Ending fates
 
@@ -270,7 +274,9 @@ At Mme Lavergne's salon on Sat 27 Apr she sells painted fans from a tray and, li
 | CH-13 | Saves Delacroix in the rafters; watches Min-jun leave his concerto for her | He chose a person over the future | Seen |
 | CH-14 | Sees Sand off alone; the Night of Stars | — | Love, said aloud once |
 | CH-15–16 | Sees his Seoul in the amalgam zones (with W4); sings the Octave's second voice | — | Wonder at towers of glass, or homesickness for rooftops, by Horizon |
-| CH-17 | Answers the Question | — | §4.13 |
+| CH-17 | Answers the Question | — | §4.14 |
+
+**By act.** *I:* a gilder's daughter sells fans, takes a lord's purse for her brother's sake, and sketches the man she is paid to watch. *II:* she learns to paint light, falls in love, stops reporting, steals the ledger, and confesses at dawn. *III:* Fractured and marked for death, she fights beside him, goes alone for Théo, and earns her place back by acting. *IV:* she paints the stars, hears the truth, and gives her own answer. *Epilogue:* in Seoul she walks into the century of light; in Paris she becomes Lucile Aubray in her own.
 
 ### 4.8 The betrayal, written so she stays herself
 
@@ -313,9 +319,11 @@ On the Panthéon roof, among David d'Angers' scaffolding, she paints ***La Nuit 
 | IMPASTO / *Nuit étoilée* | Command (CH-14) | Sets Night; under Night, 8 swirling hits that restore INS |
 | LUMIÈRE | Command (epilogues) | Two Lights at once |
 | *Shift the Hour* | Sub-command | Painted Light, 0 INS |
-| *Effet de brume* | R5 Signature | *Proposed:* sets Fog and Smokes all enemies, the river mist of her first canvas |
+| *Effet de brume* | R5 Signature (HRM-PC02-04) | WATER to all enemies, then sets Fog and Smokes them (base 60): the river mist of her first canvas |
 | *Lever du jour* | Cadenza | Sets Dawn, LIGHT on all; phase 2 party Cantabile and Varnish |
-| 별 *Byeol* | Seoul only (all 40 Hanmadi words) | Her first written hangul word, "star" |
+| 별 *Byeol* | Seoul only (HRM-PC02-07; all 40 Hanmadi words) | LIGHT to all, party Inspired: her first written hangul word, "star" |
+
+Her innate line is the party's LIGHT: *Lead White* (T2, at join), *Gold Leaf* (T3, CH-10) and *Zenith* (T4, CH-14), plus *Glaze* and *Varnish* for the front row. **Rank 10, *Golden Hour*** (the Night of Stars): *Shift the Hour* no longer resets IMPRESSION's streak, so she can repaint the sky mid-chain.
 
 **Best Synergy partners:** Min-jun (SYN-01), Delacroix (SYN-10, SYN-13), Chopin (SYN-12 *Nocturne in Blue*), Farrenc (SYN-23 *Les Inadmissibles*), Berlioz (SYN-15 *Prometheus*), Julien (SYN-20 *Blue Hour*); in Seoul, SYN-19 *Samulnori*.
 
@@ -332,10 +340,11 @@ Six sequential parts, each an hour of Paris light; none can be played while she 
 | R5 | Part 3 · Noon | **The Refused Portrait** — behind the attic door, the Salon-refused portrait of Théo; she speaks of her father for the first time. Lifts the Noon gate; Signature *Effet de brume* |
 | R6 | Part 4 · Afternoon (from Mending 2) | **The Gilder's Daughter** — she redeems her father's burnishing agate from the Mont-de-Piété and gilds the frame Delacroix ordered for the Algiers canvas, as Gilles did for ten years |
 | R7 | Part 5 · Dusk (from Mending 2) | **The Lamplighter's Round** — at dusk she paints each *réverbère* along the quai as it is lit and asks what the lights of his city look like; she decides to sign nothing yet, "until I know whose century I'm in". (R7 in CH-06–CH-08 also opens the Early Truth) |
-| R8–R9 | — | Rank by bond points; her Trio eligibility (R8) and Kindred lines |
+| R8 | — | Reached by BP after Mending 2 (CH-12–CH-14). Opens her Trios: SYN-15 *Prometheus* once Berlioz is also R8 (CH-14+), SYN-20 *Blue Hour* once Julien is also R8 |
+| R9 | — | Reached by BP; no unlock of its own. Her finale is scripted, so the Night of Stars sets R10 from whatever rank she holds |
 | R10 | Part 6 · Night (scripted) | **The Night of Stars** (§4.11) |
 
-Evening scenes 3–6: **A Place at Table** (CONF CH07-02, his mother's empty chair) · **Indiana Aloud** (she reads Sand's novel to him; he reads French aloud worse than she paints fans badly) · **Théo Counts** (cards by candlelight; Théo counts every trick out loud) · **The Quays After Rain** (LOC-P22; the river violet under the arches).
+Evening scenes 3–6: **A Place at Table** (CONF CH07-02, his mother's empty chair) · **Indiana Aloud** (she reads Sand's novel to him, then makes him read a page back and corrects every vowel) · **Théo Counts** (from CH-07, once Théo is introduced: cards by candlelight; Théo counts every trick out loud) · **The Quays After Rain** (LOC-P22; the river violet under the arches).
 
 **BQ-PC02b *A Harbour of Her Own*** (CH-14; Étretat → Le Havre): at the Étretat cliffs the Needle Echo (BOSS-39) cycles the Light from Dawn to Dusk; at Le Havre at sunrise she sets up before the harbour, the masts and the low red sun, and Min-jun goes quiet, because he has seen this painting in a book. She sees his face, turns her easel to the fish market waking on the quay, and paints *Le Havre, la criée au lever du jour*, which becomes her Salon entry No. 61 (KEY-40). In the Paris branch she will stand before Monet's harbour in 1874 and smile at the canvas she chose not to take (LAW-21).
 
@@ -355,9 +364,9 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 
 | Seoul (YES, CH-E1) | Paris (NO, CH-E2) |
 |---|---|
-| She steps into a snowy Dongji afternoon in Seo-yeon's cream coat and red scarf. She speaks 1830s French, corrects the translation app's grammar, learns hangul within a week (first written word 별, "star") and gathers 40 Hanmadi words. Electric light is "lightning in glass". At the "Light & Colour" exhibition she laughs at the room of haystacks, weeps before *Starry Night over the Rhône* ("They found it without a door"), and finds her own canvas labelled "Circle of Corot": "Let it be anonymous. It was a gift." At Yanghwajin she learns her sickly brother lived to 77 and crossed the world for her. She paints Seoul at night and reaches LUMIÈRE; a promise at the Bosingak bell (no proposal). End card: "In March 2027, papers arrived in the name of Lucile Aubray." | She refuses, then asks him to stay. Through the winter she prepares her Salon entry while Delorme's Erasure hunts her canvases (the Canvas Ledger). She **proposes** at dawn on Montmartre on her 24th birthday, Sun 9 Feb 1834; sits beside him for Delacroix, painted clearly at the window and looking at the viewer, and writes "Il est resté." on the reverse; leads the Brushwork duel before the jury (BOSS-32, Sat 15 Feb); is hung *au ciel* at the opening (Sat 1 Mar) and guards her canvas through BOSS-33. She signs "L. Aubray", grows LUMIÈRE ("Then I'll paint something he won't."), marries him in June 1834, stands before Monet's harbour at the first Impressionist exhibition (15 Apr 1874) and is buried beside him at Montmartre (1891). Art historians call her early sketches "the Aubray Problem". |
+| She steps into a snowy Dongji afternoon in her ochre shawl; by nightfall she is wearing Seo-yeon's cream coat and red scarf. She speaks 1830s French, corrects the translation app's grammar, learns hangul within a week (first written word 별, "star") and gathers 40 Hanmadi words. Electric light is "lightning in glass". At the "Light & Colour" exhibition she laughs at the room of haystacks, weeps before *Starry Night over the Rhône* ("They found it without a door"), and finds her own canvas labelled "Circle of Corot": "Let it be anonymous. It was a gift." At Yanghwajin she learns her sickly brother lived to 77 and crossed the world for her. She paints Seoul at night and reaches LUMIÈRE; a promise at the Bosingak bell (no proposal). End card: "In March 2027, papers arrived in the name of Lucile Aubray." | She refuses, then asks him to stay. Through the winter she prepares her Salon entry while Delorme's Erasure hunts her canvases (the Canvas Ledger). She **proposes** at dawn on Montmartre on her 24th birthday, Sun 9 Feb 1834; sits beside him for Delacroix, painted clearly at the window and looking at the viewer, and writes "Il est resté." on the reverse; leads the Brushwork duel before the jury (BOSS-32, Sat 15 Feb); is hung *au ciel* at the opening (Sat 1 Mar) and guards her canvas through BOSS-33. She signs "L. Aubray", grows LUMIÈRE ("Then I'll paint something he won't."), marries him in June 1834, stands before Monet's harbour at the first Impressionist exhibition (15 Apr 1874) and is buried beside him at Montmartre (1891). Art historians call her early sketches "the Aubray Problem". |
 
-*Proposed ending-roll vignettes:* Seoul: a canvas of Jeong-dong at night drying in Kang Piano Service, her father-in-law's radio playing. Paris: two easels in the Montmartre skylight, one canvas signed, one left blank for the morning.
+*Proposed ending-roll vignettes:* Seoul: a canvas of Jeong-dong at night drying among the felt hammers of Kang Piano Service, Min-jun's father's radio tuned to baseball. Paris: two easels in the Montmartre skylight, one canvas signed, one left blank for the morning.
 
 ---
 ## 5. PC-03 Hector Berlioz
@@ -387,28 +396,31 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 | CH-12–13 | Rejoins for Val-de-Grâce; conducts the *Concerto "Lost Era"* while Habeneck sulks (R-29) |
 | CH-14–17 | Turns 30 (Wed 11 Dec); second voice of LM-01 (E); conducts *La Musique des étoiles* to hold the Window open |
 
+**By act.** *I:* the drunk at the tavern who hears the future and decides it needs a friend; the barricade. *II:* courts an injured actress against his family, and leaves his own wedding supper to rescue the foreigner. *III:* a newlywed in Paris while the others tour; back for Val-de-Grâce, then on the Opéra's podium for a friend's concerto. *IV:* thirty, conducting the music that holds the Window open, and staying in a century that will misunderstand him.
+
 **Defining scene: "The Wedding Menu" (CH-09, Thu 3 Oct 1833).** Four hours married, in borrowed finery at the British Embassy, Berlioz is handed an address at Bercy by a breathless eleven-year-old. Harriet tells him to go before he has finished asking. He writes on the back of the menu ("You married a man who writes symphonies about the scaffold; you cannot be surprised when he runs to one", world_rules_and_lore §13.14) and leads the rescue thread himself (BOSS-12 phase 1, without Min-jun). The man who loved an ideal proves he can love real people more than his own legend.
 
-**Battle identity.** *Cue* adds a section token (Strings heal, Winds and Percussion strike, **Brass clears every Onlooker**, Chorus cures Hush); *Tutti* fires the Spectral Orchestral Summon matching up to three tokens (20 recipes, TUT-01–20, learned from his notebook pages). He uses his Opus Score's Invocation twice per battle; **Idée Fixe** adds +15% per consecutive Fight on one target. Signature skills: *Marche au supplice* (Brass + Brass + Percussion, EARTH/FIRE, canon) · *Songe d'une nuit du sabbat* (the SYN-14 Tutti) · *Chœur d'ombres* (R5 Signature, from *Lélio*) · *Scène aux champs* (*proposed* Strings recipe: party heal under four-timpani thunder) · *Le roi Lear* (*proposed* Brass recipe) · *Les Francs-juges* (*proposed* Chorus recipe) · *Cacophony* (any unknown recipe) · *Dies irae* (Cadenza). **Best partners:** Delacroix (SYN-08), Min-jun (SYN-04, SYN-14), Lucile (SYN-15), Liszt (SYN-14).
+**Battle identity.** The party's summoner who also carries a blade. *Cue* adds a section token with a small effect at once (Strings heal the lowest ally, Winds a WIND jab, **Brass clears every Onlooker** and gives him Swell, Percussion an EARTH jab that may Stun, Chorus cures Hush and grants Cantabile); *Tutti* fires the Spectral Orchestral Summon matching up to three tokens (20 recipes, TUT-01–20, learned from his notebook pages). He uses his Opus Score's Invocation twice per battle; **Idée Fixe** adds +15% per consecutive Fight on one target. Signature skills: *Marche au supplice* (TUT-16, Brass + Brass + Percussion, EARTH + FIRE, massive single target) · *Songe d'une nuit du sabbat* (TUT-17, Brass + Percussion + Chorus, SHADE + FIRE on all; the SYN-14 Tutti) · *Fantaisie sur la Tempête* (TUT-19, Winds + Winds + Strings, WATER + WIND on all) · *Scène aux champs* (TUT-02, a lone Winds cue: WIND on one) · *Chœur d'ombres* (R5 Signature, from *Lélio*: SHADE on all, then Reverie) · *Coup d'archet* and *Estocade* (sword-cane cuts on the downbeat; *Estocade* feeds Idée Fixe) · *Cacophony* (any unknown recipe) · *Dies irae* (Cadenza: SHADE + EARTH, phase 2 Stagefright on all). **Rank 10, *Maestro*:** his gauge refills from 128 after a Cue, so a three-token Tutti arrives a turn and a half sooner. **Best partners:** Delacroix (SYN-08), Min-jun (SYN-04, SYN-14), Lucile (SYN-15), Liszt (SYN-14).
 
 **Bond questline: BQ-PC03 *Idée Fixe*** (CH-03–CH-14; 8 Evening scenes at the tavern, then a boulevard café from CH-12).
 
 | Rank | Event | Title — beat |
 |---|---|---|
 | R1 | Evening 1 | **Fourteen Ears** — he reads aloud the review that called him noise, and counts the critics |
-| R2 | Part 1 | **Pages from Rome** — redeem his pawned Rome notebooks from the Mont-de-Piété: the first Tutti pages |
+| R2 | Part 1 (by CH-06) | **Pages from Rome** — redeem his pawned notebooks from the Mont-de-Piété: the Rome sketches, and folded inside them the *Marche au supplice* pages he carried to Italy and back (TUT-16) |
 | R3 | Evening 3 | **The Guitar** — he plays it, badly and beautifully, and admits the piano defeats him. Unlocks SYN-04 |
 | R4 | Part 2 | **Ophelia's Letter** — Min-jun translates Hector's overwrought English for Harriet, softening it; she laughs for the first time in a month |
 | R5 | Part 3 | **Marie, Again** — at Pleyel's, Marie Moke-Pleyel; he confesses the pistols and the lady's-maid disguise of 1831 and laughs at the man who bought them. Signature |
 | R6 | Evening 6 | **Money He Does Not Have** — he lends Mère Gaudin 50 F he must borrow from Liszt |
 | R7 | Part 4 | **La Côte-Saint-André** — his father's letter refusing consent to marry an actress; he decides anyway. Cadenza |
+| — | Story step (CH-09, Thu 3 Oct; every run) | **The Bride's Gift** — at the British Embassy supper, before Petit-Louis arrives, Harriet hands back the *Sabbat* pages he gave her in 1832: "Finish it for a living woman." *Songe d'une nuit du sabbat* (TUT-17) |
 | R8 | Evening 8 | **A Thousand Musicians** — he asks, seriously, whether the future will ever give him a thousand players. Hint |
-| R9 | Finale | **The Real Woman** (after the wedding) — Harriet tells Min-jun the truth behind the *idée fixe*: he fears she is only a role. He writes eight bars for Harriet, not Ophelia, and the *idée fixe* is laid to rest |
-| R10 | Confession (optional) | At the tavern or the café he asks whether France will understand him. "Not for a long time. Then the whole world will." He swears to conduct the future only under its makers' names, seeding the Vow's credit clause |
+| R9 | Finale (CH-12–CH-14) | **The Real Woman** (after the wedding) — Harriet tells Min-jun the truth behind the *idée fixe*: he fears she is only a role. He writes eight bars for Harriet, not Ophelia, and the *idée fixe* is laid to rest; the storm pages of the *Tempête* fantasy go back into his notebook (TUT-19) |
+| R10 | Confession (optional) | At the tavern or the café he asks whether France will understand him. "Not for a long time. Then the whole world will." He swears to conduct the future only under its makers' names, seeding the Vow's credit clause. Command upgrade *Maestro* |
 
 **Ending fates.** *Both branches:* he stays in his own century; Var. I of *Harmonies*, *Allegro con fuoco*, is signed with a sword-cane, 1834. **Seoul:** his keepsake baton becomes a Remembrance (*Dies irae*); end card: *Harold en Italie*, Sun 23 Nov 1834. **Paris:** in the hall for the 22 Dec concert as Paganini watches from a side box; reads Paganini's note asking for a viola work (KEY-37) aloud to the Atelier; his baton forges the sword-cane *Idée Fixe*. *Proposed vignette:* rehearsing *Harold*, a viola part written for a man who will never play it.
 
-**Afterword (1803–1869).** *Harold en Italie* was first heard on 23 November 1834. For three decades Berlioz paid his way as a critic, chiefly for the *Journal des Débats*. *Benvenuto Cellini* failed at the Opéra (1838); Paganini's gift of 20,000 francs made *Roméo et Juliette* (1839) possible. His *Treatise on Instrumentation* (1844) taught the century to write for orchestra, while *La Damnation de Faust* (1846) nearly ruined him. He wrote the *Te Deum*, *L'Enfance du Christ* and *Les Troyens*, which he never saw staged complete; that waited for the twentieth century. His *Mémoires* were published in 1870.
+**Afterword (1803–1869).** *Harold en Italie* was first heard on 23 November 1834. For three decades Berlioz paid his way as a critic, chiefly for the *Journal des Débats*. *Benvenuto Cellini* failed at the Opéra (1838); Paganini's gift of 20,000 francs made *Roméo et Juliette* (1839) possible. His *Treatise on Instrumentation* (1844) taught the century to write for orchestra, while *La Damnation de Faust* (1846) nearly ruined him. He wrote the *Te Deum*, *L'Enfance du Christ* and *Les Troyens*, which he never saw staged complete; that waited for the twentieth century. In 1865 he finished his *Mémoires*, among the liveliest books ever written by a composer.
 
 ---
 
@@ -421,7 +433,7 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 | Age in game | 34 → 35 on Fri 26 Apr 1833 (CH-03) |
 | Role / archetype | Elemental spellblade, collector · Red Mage / Mystic Knight (+ Blue-Magic Studies) |
 | Weapon / command | Rapiers · CANVAS (+ *Sketch* from CH-07) |
-| Join / leave / rejoin | Joins CH-03; absent CH-10–CH-11 (the Salon du Roi commission; §16e keeps him from Sand); rejoins CH-12; Rafters team in CH-13 |
+| Join / leave / rejoin | Joins CH-03; absent CH-10–CH-11 (the Salon du Roi commission; CANON §16e keeps him from Sand); rejoins CH-12; Rafters team in CH-13 |
 
 **Appearance.** Dark hair and moustache, a black dandy's coat over a vermilion waistcoat (the sprite's "vermilion V"), a silk scarf at the throat that is never removed. *Battle idle:* rapier point low, he flicks an invisible speck from his cuff. *Field:* `cravat` (the scarf adjusted), `sketch`, `paint`. Proposed portrait extra `appraising` (fallback `neutral`); `tender` only after CH-09.
 
@@ -439,9 +451,11 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 | CH-12–14 | Steps beside Min-jun before Archon finishes the Revelation; saved by Lucile in the rafters (CH-13); voices the Vow with Farrenc (CH-14); SYN-13 |
 | CH-16–17 | Third voice of LM-01 (F♯); holds an oscillator line at the Window; receives the Heart shard for the Door's dial (KEY-29) |
 
+**By act.** *I:* a dandy who lends his studio to Berlioz's madman and his sword to a barricade. *II:* fights colour's war on the Algiers canvas, steals a violet from a younger painter, hears the truth and draws eight emblems. *III:* the Salon du Roi keeps him in Paris while the others travel; he rejoins for the abbey and is saved in the rafters by the woman he once called a heretic. *IV:* voices the Vow, holds the Window's chord, and carries home the shard that will lock the Door.
+
 **Defining scene: "Eight Emblems" (CH-09, LOC-P06).** The Algiers canvas has its last colour; Min-jun has told him the truth. Delacroix does not answer. He takes his notebook and draws, one per friend: a baton, a brush, a sword-cane, a rapier, a hammer, a quill, a sabre, a folio. The player has seen these eight panels on a door in a cellar in Seoul (LAW-22). The guarded man has just designed a home for his brother, and does not know it yet.
 
-**Battle identity.** CANVAS: two unlocked Pigments and a Subject (one / rank / all), a dual-element painted strike that ignores row; Pigments FIRE and WIND at join, EARTH and WATER (CH-05), ICE and BOLT (CH-08), SHADE (CH-10), LIGHT (R10). *Sketch* records 36 Studies (STU-01–36), each unlocking a named recipe; aimed at an Onlooker it clears them. **Chiaroscuro:** Canvas +25% under Dusk, Night or Candle; 25% counter when an ally Swoons. Signature skills: *Sardanapale* (FIRE + SHADE, Stagefright) · *Chios* (ICE + WATER, all) · *Liberté* (FIRE + WIND, party Fortissimo) · *La Barque de Dante* (R5 Signature; *proposed* WATER + SHADE on a rank, Hush) · *Femmes d'Alger* (*proposed* BQ-PC04 reward: LIGHT + WATER, party Glaze) · *Missolonghi* (*proposed* ICE + SHADE) · *Sketch* · *La Liberté guidant* (Cadenza). **Best partners:** Berlioz (SYN-08), Lucile (SYN-10, SYN-13), Chopin (SYN-21), Min-jun (SYN-05).
+**Battle identity.** CANVAS: two unlocked Pigments and a Subject (one / rank / all), a dual-element painted strike that ignores row; Pigments FIRE and WIND at join, EARTH and WATER (CH-05), ICE and BOLT (CH-08), SHADE (CH-10), LIGHT (R10). *Sketch* records 36 Studies (STU-01–36), each unlocking a named recipe; aimed at an Onlooker it clears them. **Chiaroscuro:** Canvas +25% under Dusk, Night or Candle; 25% counter when an ally Swoons. SHADE is ground in CH-10 for the Salon du Roi ceiling and first usable when he rejoins in CH-12. Signature skills: *Liberté* (story recipe, CH-04: FIRE + WIND on all, party Fortissimo) · *Chios* (CH-08: ICE + WATER on all at a kinder spread) · *Femmes d'Alger* (BQ-PC04 finale: LIGHT + FIRE on all, sets Candle so his next Canvases gain Chiaroscuro) · *Sardanapale* (CH-12: FIRE + SHADE on one, Stagefright) · *Barque de Dante* (R5 Signature: WATER + SHADE on all, Lento, the damned clinging to the boat) · *Missolonghi* (STU-23, sketched from Vane's animated collection: EARTH + LIGHT on all, party Varnish) · *Touche* (his Fights carry a pigment: the Mystic Knight's edge) · *La Liberté guidant* (Cadenza: FIRE + WIND on a rank, phase 2 party Fortissimo). **Rank 10:** the LIGHT pigment itself (canon). **Best partners:** Berlioz (SYN-08), Lucile (SYN-10, SYN-13), Chopin (SYN-21), Min-jun (SYN-05).
 
 **Bond questline: BQ-PC04 *The Colours of Algiers*** (mandatory, CH-03–CH-09; 6 Evening scenes at the studio).
 
@@ -454,11 +468,12 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 | R4 | Evening 4 | **The Throat** — his voice fails at a dinner for Thiers' secretary; Min-jun covers; privacy is armour |
 | Part 2 (CH-06) | Story | **Heresy** — after Lucile's canvas he copies her violet shadow onto a scrap, then pins the scrap above his easel |
 | R5 | Evening 5 | **Constable's Green** — England, 1825. Signature *La Barque de Dante* |
-| Part 3 (CH-07–08) | Story | **The Critic's Knife** — Delorme's press campaign calls the canvas "the Moroccan sickness"; he refuses to answer in print |
+| Part 3 (CH-07–08) | Story | **The Critic's Knife** — Delorme's press campaign calls the canvas "the Moroccan sickness"; he refuses to answer in print and answers on canvas instead, reworking his old *Scio* studies (*Chios* recipe) |
 | R6 | Evening 6 | **The Dandy's Mirror** — the waistcoat is armour too |
-| Finale (CH-09) | Story → R10 | **Women of Algiers** — the last colour laid; LIGHT pigment; the scripted confession (LM-12) and the emblems |
+| R7–R9 | — | Crossed by BP from Parts 2–3 and story events, or skipped outright when the finale sets 1000. R7 brings his Cadenza in CH-09; R8 his Trio eligibility (SYN-13 itself waits for the CH-14 story unlock) and the Hint, moot once he hears the truth |
+| Finale (CH-09) | Story → R10 | **Women of Algiers** — the last colour laid; LIGHT pigment and the *Femmes d'Alger* recipe; the scripted confession (LM-12) and the emblems |
 
-**Ending fates.** **Seoul:** paints *Le Frère de demain* from memory in February 1834 ("I will not fix a face I shall never see again"), Lucile dissolving into light at the window in her own touch; designs the Door that spring; gives Théo the portrait "for when your sister is found"; his variation (Var. II, *Sarabande*, 1841) has its bass corrected in pencil, and this doc names the corrector: Chopin. Remembrance: *La Liberté guidant*. **Paris:** paints the portrait from life in a playable sitting, Lucile clear at the window and Min-jun's face in shadow at his request; argues for her before the jury as an outside advocate, bringing Delaroche if SQ-11 was done; *Women of Algiers* hangs at the same Salon. His keepsake sketch forges the rapier *Liberté*.
+**Ending fates.** **Seoul:** paints *Le Frère de demain* from memory in February 1834 ("I will not fix a face I shall never see again"), Lucile dissolving into light at the window in her own touch; designs the Door that spring; gives Théo the portrait "for when your sister is found"; his variation (Var. II, *Sarabande*, 1841) has its bass corrected in pencil, and this doc names the corrector: Chopin. Remembrance: *La Liberté guidant*. **Paris:** paints the portrait from life in a playable sitting, Lucile clear at the window and Min-jun's face in shadow at his request; pleads for her as an outside advocate before the jury sits (no Academician, he has no vote), and if he brought Delaroche to her canvases in CH-14 (SQ-11), Delaroche speaks for her in session; *Women of Algiers* hangs at the same Salon. His keepsake sketch forges the rapier *Liberté*.
 
 **Afterword (1798–1863).** *Women of Algiers in Their Apartment* was bought by the state at the Salon of 1834. Delacroix spent the next thirty years on walls: the Palais Bourbon's Salon du Roi and its library, the library of the Luxembourg, the ceiling of the Louvre's Galerie d'Apollon, the Chapel of the Holy Angels at Saint-Sulpice. In 1838 he painted Chopin and George Sand on one canvas, later cut in two. He resumed his *Journal* in 1847 and entered the Académie at last in 1857. The young painters who followed called him their father: Fantin-Latour painted an *Homage to Delacroix* (1864), and Signac traced *From Eugène Delacroix to Neo-Impressionism* (1899).
 
@@ -490,9 +505,11 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 | CH-12–14 | Turns 20 the week of Val-de-Grâce; the rafters; grinds three tuning forks to the tablature's wolf fifth |
 | CH-15–17 | Gives out the forks (defining scene); translates the Frères' inscription; fourth voice of LM-01 (G); holds an oscillator line at the Window |
 
+**By act.** *I:* a nineteen-year-old prodigy who would rather be anywhere than a salon; his family shelters the wounded and he follows them out of the house. *II:* reads a future alloy at a glance and imagines a machine in music. *III:* the tour's quiet anchor and the rafters' shield; turns twenty in the week of the abbey. *IV:* grinds the forks, keeps the door, and chooses to be a keeper rather than a recluse.
+
 **Defining scene: "The Wolf Fifth" (CH-15, the crypt door).** Three parties must part in the dark. Alkan unwraps three tuning forks (KEY-32) he ground at his family's bench the week before, one for each party, each sounding the tablature's wolf fifth. He hands them out without a speech. "I will keep the door. Keeping is what I am good at." The recluse has made himself useful in three places at once.
 
-**Battle identity.** ÉTUDE: enter a 3–8 input sequence within 2.0 s; correct fires, wrong plays *Fausse note* (a Fight); 12 Études (3 at Lv 11, then at Lv 14, 18, 22, 26, 30, 34, 38, 43, 50), named only from pre-1834 works or plain French terms. A Conducted Étude cannot fail. **Recluse:** last standing or alone in the back row, he holds Bulwark and +25% STR. Signature skills: *Les Omnibus* (R5 Signature) · *Da camera* (*proposed* opening Étude, after the 1832 concerto) · *Marteau* (*proposed*, a single EARTH hammer-blow) · *Octaves* (*proposed*, multi-hit) · *Mouvement perpétuel* (*proposed*, sets Allegro on himself) · *Ostinato* (*proposed* Lv-50 Étude, ×3.5) · *La Machine* (Cadenza: 12 EARTH hits, physical ×4.0). **Best partners:** Min-jun (SYN-07, and Conduct), Farrenc (SYN-11), Liszt (SYN-22).
+**Battle identity.** ÉTUDE: enter a 3–8 input sequence within 2.0 s; correct fires, wrong plays *Fausse note* (a Fight); 12 Études (3 at Lv 11, then at Lv 14, 18, 22, 26, 30, 34, 38, 43, 50), named only from pre-1834 works or plain French terms. A Conducted Étude cannot fail. **Recluse:** last standing or alone in the back row, he holds Bulwark and +25% STR. Signature skills: *Martèlement* (ETU-01, his opener: an EARTH hammer-blow) · *Carillon* (ETU-06, Lv 22: BOLT on all) · *Moto perpetuo* (ETU-09, Lv 34: seven random hits) · *Fugato* (ETU-10, Lv 38: the eight-input single-target peak) · *Ostinato* (ETU-12, Lv 50: EARTH ×3.5, the figure that never stops) · *Les Omnibus* (R5 Signature: one sure blow on every enemy) · *Psaume* (a psalm under his breath: Bulwark and Cantabile) · *La Machine* (Cadenza: 12 EARTH hits, physical ×4.0, phase 2 Stun). **Rank 10, *Sang-froid*:** his input window widens from 2.0 to 2.5 s. **Best partners:** Min-jun (SYN-07, and Conduct), Farrenc (SYN-11), Liszt (SYN-22).
 
 **Bond questline: BQ-PC05 *The Railway Étude*** (CH-05–CH-14; 8 Evening scenes at the family house, LOC-P36). Min-jun stays silent about *Le chemin de fer* (1844) and about Alkan's decades of withdrawal (LAW-18).
 
@@ -507,9 +524,9 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 | R7 | Part 4 | **The Sabbath Light** — Friday supper at the house; he asks whether the world gets louder. Cadenza |
 | R8 | Evening 8 | **A Chair at the Conservatoire** — the post he hopes for; Min-jun keeps his face still. Hint |
 | R9 | Finale | **The Railway Étude** — he plays the machine he imagined, a perpetual motion of wheels; Min-jun recognises its shape and says nothing |
-| R10 | Confession (optional) | At the pedal piano, the house asleep: "Does the Sabbath still fall on Saturday?" "It does." "Then the important things survived." The only confession that ends in a laugh |
+| R10 | Confession (optional) | At the pedal piano, the house asleep: "Does the Sabbath still fall on Saturday?" "It does." "Then the important things survived." The only confession that ends in a laugh. Command upgrade *Sang-froid* |
 
-**Ending fates.** **Seoul:** co-executor of the Pact with Liszt and Théo, crating the Door in March 1886 at seventy-two; Var. III, *Ostinato*, hammer, 1886. His fork becomes a Remembrance (*La Machine*). **Paris:** helps destroy the cabal's last evidence (SQ-23), and alone of the friends asks to keep a single nitinol spring as a curiosity; his fork forges the hammer *Pédalier*. *Proposed vignette:* explaining an escapement to Théo at the Atelier bench.
+**Ending fates.** **Seoul:** co-executor of the Pact with Liszt and Théo, crating the Door in March 1886 at seventy-two; Var. III, *Ostinato*, hammer, 1886. His fork becomes a Remembrance (*La Machine*). **Paris:** helps destroy the cabal's last evidence (SQ-23); alone of the friends he asks to keep a single nitinol spring as a curiosity, turns it over for a long minute, and drops it into Pleyel's furnace himself ("It remembers its shape. I would rather it forgot."); his fork forges the hammer *Pédalier*. *Proposed vignette:* explaining an escapement to Théo at the Atelier bench.
 
 **Afterword (1813–1888).** *Le chemin de fer* (1844) was among the first pieces of music about a railway. The *Grande sonate "Les quatre âges"* followed in 1847. Passed over for the Conservatoire's piano professorship in 1848, Alkan withdrew from public life for most of the next quarter-century and wrote some of the century's most formidable piano music in private: the twelve études in the minor keys, Op. 39 (1857), hold a symphony and a concerto for piano alone. He returned with his *Petits Concerts* at the Salle Érard (1873–1880). Pianists of the twentieth century rediscovered him.
 
@@ -540,9 +557,11 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 | CH-11–14 | Joins at Liège (young Franck at the keyboard); counters the Lorelei's song; the corridors with Farrenc and Offenbach; Bach for three keyboards with Hiller and Liszt (Sun 15 Dec) |
 | CH-16–E2 | Fifth voice of LM-01 (A); keepsake: a score page; in Paris, improvises a mazurka on *Arirang* and spends his 24th birthday at the Atelier |
 
+**By act.** *I:* glimpsed from a theatre gallery, playing four hands with Liszt. *II:* the exile who will not play for crowds lends his own Pleyel to a concert for cholera orphans, watches Min-jun's hands restore it after the sabotage, finds his own way into the Ballade, and asks the question Min-jun feared. *III:* stays in Paris with his pupils and proofs, then meets the tour at Liège and counters the Lorelei's song; bronchitis keeps him from the abbey. *IV:* the corridors at the Opéra, Bach for three keyboards, and a fifth voice for the Octave; in Paris, a birthday kept at the Atelier by a friend who knows too much and says nothing.
+
 **Defining scene: "Żal" (CH-09, LOC-P11).** He finds the door into the Ballade's ending himself, not by being told (history keeps its 1835 date, R-46). Then, while Min-jun plays Ravel's *Pavane* (REP-12), he asks the question Min-jun has feared since March. Min-jun answers with the only truth he will ever tell about a friend's future: "You will be played every day for two hundred years." The Lantern Rule is born (LAW-18), and Chopin pledges to help find the door and keep the secret.
 
-**Battle identity.** *Borrow* takes 30% from one enemy's ATB and stores a charge (max 3); *Repay* gives every charge to one ally (+34% ATB each; three charges = an immediate turn, and it cures Fermata). **Sotto Voce:** enemies target him half as often; heals +20%; max HP −10%. Signature skills: *Borrow* · *Repay* · *Tempo Rubato* (R10: Borrow hits all) · *Étude en ut mineur* (R5 Signature; *proposed:* party Allegro and Fortissimo, the fury of 1831 turned to speed) · *Larghetto* (*proposed* party heal) · *Mazurka* (*proposed* cleanse and Cantabile) · *Grand Duo* (*proposed* revive, after the duo with Franchomme) · *Warszawa* (Cadenza: party heal and Cantabile; phase 2 drains enemy gauges and sets 3 charges). **Best partners:** Min-jun (SYN-03 advances his Recital), Liszt (SYN-09), Lucile (SYN-12), Delacroix (SYN-21).
+**Battle identity.** *Borrow* takes 30% from one enemy's ATB and stores a charge (max 3); *Repay* gives every charge to one ally (+34% ATB each; three charges = an immediate turn, and it cures Fermata). **Sotto Voce:** enemies target him half as often; heals +20%; max HP −10%. Signature skills: *Borrow* · *Repay* · *Tempo Rubato* (R10 upgrade: Borrow hits all) · *Étude ut mineur* (R5 Signature, Op. 10 No. 12: the left-hand storm, 8 random SHADE + BOLT hits; the fury of 1831 turned outward) · *Cantilena* → *Mazurka* → *Valse brillante* (his heal line: H2 at join, H3 at his first CH-11 battle, H4 in CH-14) · *Encore* (revives at 25% or grants Encore) · *Fermata* (freezes one enemy's gauge) · *Warszawa* (Cadenza: party heal and Cantabile; phase 2 drains every enemy gauge by half and sets 3 charges). **Best partners:** Min-jun (SYN-03 advances his Recital), Liszt (SYN-09), Lucile (SYN-12), Delacroix (SYN-21).
 
 **Bond questline: BQ-PC06 *Żal*** (mandatory, CH-06–CH-09; 6 Evening scenes at his apartment).
 
@@ -557,7 +576,8 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 | R5 | Evening 5 | **Mimicry** — he plays "the Corean pianist" and Min-jun laughs. Signature |
 | Part 3 (CH-08) | Story | **The Silenced Treble** — restoring his sabotaged Pleyel with Min-jun's workshop hands; the charity concert |
 | R6 | Evening 6 | **Stuttgart** — the night he learned Warsaw had fallen |
-| Finale (CH-09) | Story → R10 | ***Żal*** — the Ballade's door; the scripted confession (REP-12) |
+| R7–R9 | — | Crossed by BP from Parts 2–3 and the concert, or skipped when the finale sets 1000. R7 brings his Cadenza in CH-09; R8 the Hint (moot once he hears the truth); he has no Trio (combat_ensemble §6.6) |
+| Finale (CH-09) | Story → R10 | ***Żal*** — the Ballade's door; the scripted confession (REP-12); *Tempo Rubato* |
 
 **Ending fates.** **Seoul:** Var. IV, *Mazurka*, quill, 1834; his score page becomes the Remembrance Seo-yeon calls most (*Warszawa*). **Paris:** Min-jun carries the knowledge of 1849 and never speaks it; when Chopin coughs, Min-jun closes a window or lends a scarf (dialogue_style_guide §7.7). The mazurka on *Arirang*; the *Harmonies* finale played at his 24th-birthday supper; his score page forges the quill *Żelazowa*. *Proposed vignette:* the Atelier's Pleyel in March light, a window closed against the wind by another hand.
 
@@ -592,9 +612,11 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 | CH-11–13 | Interprets German on the Rhine; reunion with Czerny; MEPHISTO; second piano at the Opéra |
 | CH-14–17 | Tells Belgiojoso about the embassy duel; BQ-PC07 finale; "If ever there must be a door, we will see to it"; sixth voice of LM-01 (B); keepsake: a glove his mother has mended |
 
-**Defining scene: "The Unplayed Encore" (CH-10, La Châtre).** Liszt has kept the hunted Min-jun hidden in the most public place in France, his own tour, and stayed clear of Nohant ("a touring virtuoso calling on a notorious novelist would be in every paper"). Mid-applause at the Lion d'Argent, Petit-Louis's relay brings word of wolves at Nohant. Liszt bows once, leaves his encore unplayed, and rides into the Vallée Noire in concert dress (BOSS-13). The showman walks out on applause for a friend.
+**By act.** *I:* a star seen across a theatre. *II:* a rival at d'Agoult's and a delighted witness to a rigged duel, who joins because the foreigner made him want to practise. *III:* hides the hunted man inside his own tour, walks out on applause for him, interprets him across the Rhine, and plays second piano in his concerto. *IV:* faces the legend he wanted to become, promises a door, and becomes the friend who will crate it fifty-two years later.
 
-**Battle identity.** TRANSCEND casts two Harmony spells in one action for INS × 1.5. MEPHISTO (CH-13) adds *Transcribe*: re-perform the last skill used in battle by anyone, ally or enemy, at ×1.25. **Bravura:** +10% damage per consecutive action without being hit (max +50%). Signature skills: *Transcend* · *Transcribe* · *Harmonies poétiques* (R5 Signature) · *Ecstasy* (BQ-PC07's quest-locked reward, REP-21) · *Fantastique* (*proposed* SHADE spell, from his 1833 transcription) · *Douze exercices* (*proposed* BOLT barrage, after his études of 1826) · *La Clochette* (Cadenza: 8 BOLT hits). **Best partners:** Min-jun (SYN-02 *Two-Piano Tempest*), Chopin (SYN-09), Alkan (SYN-22), Berlioz (SYN-14).
+**Defining scene: "The Unplayed Encore" (CH-10, La Châtre).** Liszt has kept the hunted Min-jun hidden in the most public place in France, his own tour, and stayed clear of Nohant ("a touring virtuoso calling on a notorious novelist would be in every paper"). Mid-applause at the La Châtre benefit, a Nohant stable-boy on a lathered horse brings word that the wolves are hunting in the Vallée Noire. Liszt bows once, leaves his encore unplayed, and rides into the Vallée Noire in concert dress (BOSS-13). The showman walks out on applause for a friend.
+
+**Battle identity.** TRANSCEND casts two Harmony spells in one action for INS × 1.5. MEPHISTO (CH-13) adds *Transcribe*: re-perform the last skill used in battle by anyone, ally or enemy, at ×1.25. **Bravura:** +10% damage per consecutive action without being hit (max +50%). He owns the party's FIRE, ICE and BOLT. Signature skills: *Transcend* · *Transcribe* · *Harm. poétiques* (R5 Signature, *Harmonies poétiques*, his real piece of 1833: LIGHT on all, party Inspired) · *Con Fuoco* / *Glaciale* / *Sforzando* (his T2 trio at join, the pairs TRANSCEND was made for) · *Feroce* / *Cristallo* / *Fulmine* (T3, Act III) · *Tutta Forza* / *Hiver* / *Tempesta* (T4, CH-14) · *Ecstasy* (BQ-PC07's quest-locked reward, REP-21: FIRE + LIGHT on all, Heat 5) · *La Clochette* (Cadenza: 8 BOLT hits). **Rank 10, *Transcendence*:** TRANSCEND costs INS × 1.25 instead of × 1.5. **Best partners:** Min-jun (SYN-02 *Two-Piano Tempest*), Chopin (SYN-09), Alkan (SYN-22), Berlioz (SYN-14).
 
 **Bond questline: BQ-PC07 *Transcendence*** (CH-07–CH-14; finale BOSS-36 in CH-14 only; 8 Evening scenes at Tortoni's).
 
@@ -609,9 +631,9 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 | R7 | Part 4 | **The Broadsheet Devil** — a violin heard at night in the empty Opéra. Cadenza |
 | R8 | Evening 8 | **Second Piano** — "For you. Tell no one." Hint |
 | R9 | Finale | **Transcendence** — BOSS-36, Paganini's Shadow: he faces the legend he wanted to become; afterwards Min-jun plays him Scriabin's Fifth Sonata and he learns *Ecstasy* |
-| R10 | Confession (CH-14 only) | Always "The Truth, from You" (the Revelation reaches him first). At Tortoni's after closing he asks to hear the future, though not his own: that he will write himself. Min-jun plays him Debussy |
+| R10 | Confession (CH-14 only) | Always "The Truth, from You" (the Revelation reaches him first). At Tortoni's after closing he asks to hear the future, though not his own: that he will write himself. Min-jun plays him Debussy. Command upgrade *Transcendence* |
 
-**Ending fates.** **Seoul:** executor of the Pact in March 1886 with Alkan and Théo, on his last visit to Paris; Var. V, *Choral*, sabre, 1886; the portrait's provenance reads "gift of the Abbé Liszt and friends". Remembrance: *La Clochette*. **Paris:** executor with Théo and the elderly Min-jun and Lucile; at Belgiojoso's he watches the Thalberg rematch (BOSS-35) and promises the princess her "proper" duel; his glove forges the sabre *Mephisto*. *Proposed vignette:* two pianos at Belgiojoso's, Liszt at the second, bowing to the first.
+**Ending fates.** **Seoul:** executor of the Pact in March 1886 with Alkan and Théo, on his last visit to Paris; Var. V, *Choral*, sabre, 1886; the portrait's provenance reads "gift of the Abbé Liszt and friends". Remembrance: *La Clochette*. **Paris:** executor with Théo and the elderly Min-jun and Lucile; at Belgiojoso's he turns pages for the Thalberg rematch (BOSS-35) while the princess renews her vow of a "proper" duel (R-10), the one he will play in 1837; his glove forges the sabre *Mephisto*. *Proposed vignette:* two pianos at Belgiojoso's, Liszt at the second, bowing to the first.
 
 **Afterword (1811–1886).** With Marie d'Agoult he lived in Switzerland and Italy (1835–1839); they had three children. From 1839 to 1847 he toured Europe as no pianist had before, effectively inventing the solo recital, and paid for Beethoven's monument at Bonn. As Kapellmeister at Weimar (1848–1861) he wrote the symphonic poems, the B-minor Sonata and the *Faust* Symphony, and championed Wagner and Berlioz. He took minor orders in Rome in 1865, taught hundreds of pupils without fee, and divided his last years between Rome, Weimar and Budapest. His last visit to Paris was in March 1886.
 
@@ -636,16 +658,18 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 
 | Ch. | Arc beat |
 |---|---|
-| CH-05 | Behind the counter of Maison Farrenc's Opus Score shop |
+| CH-05–07 | Absent but felt: the Period Scores Min-jun buys at Maison Farrenc carry pencilled fingering corrections in a firm hand, and Lucien, the engraver's apprentice at the counter (overworld_and_towns TF-030), only says that Monsieur Farrenc is at the printer's |
 | CH-08 | Recognises Delorme's formulas as a tuning system of seven; joins; argues Haydn with Min-jun (REP-44) |
 | CH-10 | Decodes the ledger at La Châtre (defining scene); with Sand, names the Code that bars them both from Théo's council |
 | CH-11–13 | Reads "H.V. 1934" on the Seventh Panel; the timed corridors fight with Chopin and Offenbach |
 | CH-14 | Voices the Vow with Delacroix; waits in the corridor during Théo's family council: "The law cannot see us. Then we shall be impossible to ignore." Lampshades the dirigible |
 | CH-16–17 | Seventh voice of LM-01: C♯, the leading tone that waits to be resolved; keepsake: an engraved plate |
 
+**By act.** *I:* not yet met. *II:* the hand in the margins of his Scores, then the mind that reads seven paintings as one tuning system. *III:* breaks the ledger by one candle, names the Code with Sand, reads "H.V. 1934", and holds the corridors. *IV:* names Min-jun's hypocrisy, forgives it, voices the Vow, and becomes Théo's guardian in fact while the law looks the other way.
+
 **Defining scene: "By One Candle" (CH-10, the Lion d'Argent, Sat 19 Oct 1833).** While Liszt plays downstairs, Farrenc breaks Vane's auction-catalogue cipher: seven lots, seven churches and schools above the quarries, seven pitches, *ré* to *do♯*. "A scale that stops on its leading tone is not finished. It is waiting." Then, on the last page, "L. — to be removed." She does not wait for morning: Min-jun must know before he rides to Nohant. The party's conscience is the first to know Lucile's life is forfeit, and the first to act on it.
 
-**Battle identity.** *Annotate* scans an enemy and places 3 crit marks; *Canon* makes an ally's every action echo its complement (attack → heal, heal → strike); *Fugue* (EARTH → WATER → LIGHT) and *Cadence* (party cleanse and heal) arrive with levels. **Equal Measure:** while she is active, reserve members receive 100% EXP, a nod to her real fight for equal pay. Signature skills: *Annotate* · *Canon* · *Fugue* · *Cadence* · *Air russe* (R5 Signature) · *Errata* (*proposed* dispel of enemy buffs) · *Basse chiffrée* (*proposed* RES-down debuff) · *Grand Tirage* (Cadenza). **Best partners:** Min-jun (SYN-06), Alkan (SYN-11), Lucile (SYN-23 *Les Inadmissibles*).
+**Battle identity.** *Annotate* scans an enemy and places 3 crit marks; *Canon* makes an ally's every action echo its complement (attack → heal, heal → strike); *Fugue* (EARTH → WATER → LIGHT) and *Cadence* (party cleanse and heal) arrive with levels. **Equal Measure:** while she is active, reserve members receive 100% EXP, a nod to her real fight for equal pay. She owns the party's EARTH. Signature skills: *Annotate* · *Canon* · *Fugue* · *Cadence* · *Air russe* (R5 Signature, R-58: theme and three variations, four hits in EARTH, WATER, WIND, ICE) · *Marginalia* (HP and affinities of every enemy at once) · *Engraving* → *Burin* → *Copperplate* (her EARTH line, T2 to T4) · *Grand Tirage* (Cadenza: Annotates every enemy, then EARTH → WATER → LIGHT on all; phase 2 party cleanse and Inspired). **Rank 10, *Stretto*:** *Canon* marks two allies, the target and the most wounded. **Best partners:** Min-jun (SYN-06), Alkan (SYN-11), Lucile (SYN-23 *Les Inadmissibles*).
 
 **Bond questline: BQ-PC08 *The Treasury*** (CH-08–CH-14; 8 Evening scenes at Maison Farrenc). She conceives her anthology of early keyboard music herself when Delorme threatens Pleyel's old-music archive; Min-jun recognises *Le Trésor des pianistes* (1861–72) and stays silent.
 
@@ -659,12 +683,12 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 | R6 | Evening 6 | **Reicha's Pupil** — the classes she was never allowed into |
 | R7 | Part 4 (CH-12–14) | **You Call It a Gift** — "Did she ask for it? Answer the question." She names his hypocrisy over Lucile; he accepts it. Cadenza |
 | R8 | Evening 8 | **Equal Measure** — what a woman's fugue is worth. Hint |
-| R9 | Finale (CH-14) | **The Treasury** — the archive saved, she resolves to publish three centuries of keyboard music; Horizon W5 if Lucile is present |
-| R10 | Confession (optional) | Among the plates, after hours: does anyone play her music in 2026? "For a long time, no. Then they found you again." "Then I shall make it very difficult for them." |
+| R9 | Finale (CH-14) | **The Treasury** — Delorme's men raid Pleyel's archive; the archive saved, she carries out a first edition of Couperin's *Les Barricades mystérieuses* (OPS-30 *Barricades*) and resolves to publish three centuries of keyboard music; Horizon W5 if Lucile is present |
+| R10 | Confession (optional) | Among the plates, after hours: does anyone play her music in 2026? "For a long time, no. Then they found you again." "Then I shall make it very difficult for them." Command upgrade *Stretto* |
 
 **Ending fates.** *Both branches:* Théo's guardian in fact (SQ-07); Théo will cut the plaque with Maison Farrenc's old letter-punches. **Seoul:** Var. VI, *Invention à deux voix*, folio, 1842; end card: her professorship (1842); Remembrance *Grand Tirage*. **Paris:** Maison Farrenc publishes "M. Kang" (*Nocturnes de Séoul*, 1840); her Overture No. 1 is heard in CH-E2; her plate forges the folio *Trésor*. *Proposed vignette:* Victorine at the Atelier's Pleyel, her mother marking the fingering.
 
-**Afterword (1804–1875).** In 1842 Louise Farrenc became professor of piano at the Paris Conservatoire, a post she held for thirty years, the only woman to hold one there in the nineteenth century. She wrote three symphonies (1841–1847) and a Nonet (1849) whose success led her to demand, and win, pay equal to her male colleagues'. The Académie des Beaux-Arts twice gave her its Prix Chartier (1861, 1869). With Aristide she published *Le Trésor des pianistes* (1861–1872), three centuries of keyboard music in twenty-three volumes. Forgotten for a century, her music is played again.
+**Afterword (1804–1875).** In 1842 Louise Farrenc became professor of piano at the Paris Conservatoire, a post she held for thirty years: one of the most prestigious chairs in European music, and one almost no woman of her century was allowed to hold. She wrote three symphonies (1841–1847) and a Nonet (1849) whose success led her to demand, and win, pay equal to her male colleagues'. The Académie des Beaux-Arts twice gave her its Prix Chartier (1861, 1869). With Aristide she published *Le Trésor des pianistes* (1861–1872), three centuries of keyboard music in twenty-three volumes. Forgotten for a century, her music is played again.
 
 ---
 ## 11. PC-09 Kang Seo-yeon
@@ -685,7 +709,7 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 
 **Arc and defining scenes.** *Seoul:* **"Nine Months"**, the reunion ("오빠. Nine months. Nine. You could have left a note."); then the busking ladder, Lucile's clothes and hangul, and the clock tower. She keeps the family secret. *Paris:* **"The Bow Lifts"**, the coda (LAW-25): Room B-07, the hum swelling at 16:52, the study, the phone's recorded goodbye with the friends crowding into frame, the snowy campus, Prof. Yoon's call at about 17:10, the packet labelled 서연에게, the hangul letter asking her to write the score's blank last page, the portrait and the fallboard tap she recognises. The coda ends on her bow lifting.
 
-**Battle identity.** *Sostenuto* heals the party each turn she keeps choosing it (+25% per consecutive turn, max +100%) and holds Cantabile; *Spiccato* lands four quick hits. **Sibling:** +20% TMP while Min-jun is active. Signature skills: *Sostenuto* · *Spiccato* · *Col legno* (*proposed* Stun strike) · *Arirang for Two* (SYN-17) · *Samulnori* (SYN-19) · *Arirang Variations* (Cadenza: party heal and Allegro; Encore on Min-jun). No bond ranks; she already knows. Lost Era bow *Hanseong* from the busking ladder's Legend rank.
+**Battle identity.** *Sostenuto* heals the party each turn she keeps choosing it (+25% per consecutive turn, max +100%) and holds Cantabile; *Spiccato* lands four quick hits. **Sibling:** +20% TMP while Min-jun is active. Signature skills: *Sostenuto* · *Spiccato* · *Harmonics* (HRM-PC09-01: glassy flageolet tones, ICE T4) · *Col legno* (Stun, the bow's wood on the string) · *Con sordino* (Glaze on every ally) · *Arirang for Two* (SYN-17) · *Samulnori* (SYN-19) · *Arirang Variations* (Cadenza: party heal and Allegro; phase 2 Encore on Min-jun). No bond ranks; she already knows. Lost Era bow *Hanseong* from the busking ladder's Legend rank.
 
 **Ending fates.** **Seoul:** the secret kept; she plays the opening of *Harmonies*' finale at the premiere's rehearsal while Min-jun writes the rest (*proposed*). **Paris:** the one who receives the past; she learns her brother lived to old age, married, and wrote to her at seventy-five.
 
@@ -709,7 +733,7 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 
 **Arc and defining scene.** Told the truth in CH-E1, he takes it with one question ("Was the food good?") and then never doubts it. **"Four In, Four Out"** (CH-E1, the clock tower, LOC-S10): as Brücke's gears grind and Min-jun's hands shake, Jae-won keeps time for the whole climb. "Breathe. Four in, four out. I've got the rhythm. You play."
 
-**Battle identity.** Each perfect press adds +10%; a perfect 8-hit BEAT also steals. **Groove:** Crescendo gains ×1.25. Signature skills: *Semachi* · *Gutgeori* · *Jajinmori* · *Hwimori* (the BEAT tiers by level) · *Hwimori* (SYN-18) · *Samulnori* (SYN-19) · *Encore Stage* (Cadenza). No bond ranks. Lost Era sticks *Sinmyeong* from BOSS-31.
+**Battle identity.** Each perfect press adds +10%; a perfect 8-hit BEAT also steals. **Groove:** Crescendo gains ×1.25. Signature skills: *Semachi* → *Gutgeori* → *Jajinmori* → *Hwimori* (the BEAT cycles by level, Lv 40 to 49+, each faster) · *Sangmo* (the ribboned hat spins through the line) · *Chuimsae* (Fortissimo and Crescendo +10: the shout of 얼쑤 *eolssu*) · *Hwimori* (SYN-18 with Min-jun) · *Samulnori* (SYN-19) · *Encore Stage* (Cadenza: 8 input-free hits that steal; phase 2 Crescendo +40). No bond ranks. Lost Era sticks *Sinmyeong* from BOSS-31.
 
 **Ending fates.** **Seoul:** keeps the secret; the samulnori club opens the New Year's Eve premiere. **Paris:** never learns the truth; in the coda a text from him lights Seo-yeon's phone as she crosses the snowy campus, his only line in that branch (*proposed*).
 
@@ -733,17 +757,19 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 
 **Arc and defining scene.** CH-08: BOSS-11; Min-jun spares him. **"The Bundle"** (CH-09, Bercy): sickened to learn Brücke made the Pleyel lethal, he guides the rescuers out and puts Lucile's reports in Min-jun's hands. "Her letters. All of them. Sorry. I'm sorry for all of it." CH-14: recruited; CH-15: Party 3 (BOSS-24 rises to 27,000 HP with him); CH-16: his Blue Note adds +9% to the Octave; CH-17: he chooses to stay.
 
-**Battle identity.** IMPROVISE stops three reels: ii–V–I is *Turnaround* (party heal), ♭II ×3 is *Tritone Storm* (CHRONO to all), mismatches give *Blue Note*; every Improvise is Anachronic (Heat 3). **Sideman:** +20% damage acting right after an ally. Signature skills: *Turnaround* · *Tritone Storm* · *Blue Note* · *Dominant* and *Backdoor* (combat_ensemble §4.6) · *Modal Vamp* (R5 Signature) · *Changes* (Cadenza). **Best partners:** Lucile and Min-jun (SYN-20 *Blue Hour*); anyone fast enough to act just before him.
+**Battle identity.** IMPROVISE stops three reels: ii–V–I is *Turnaround* (party heal), ♭II ×3 is *Tritone Storm* (CHRONO to all), mismatches give *Blue Note*; every Improvise is Anachronic (Heat 3). **Sideman:** +20% damage acting right after an ally. Signature skills: *Turnaround* · *Tritone Storm* · *Blue Note* · *Dominant* and *Backdoor* (combat_ensemble §4.6) · *Walking Bass* (EARTH T4, at join) · *Rimshot* (Stun) · *Modal Vamp* (R5 Signature, his at once since he joins at 550 BP: four free Blue Notes) · *Changes* (Cadenza: auto-stops on *Turnaround* if anyone is below half HP, else *Tritone Storm*). **Rank 10, *Second Chorus*:** once per battle he may re-spin the third reel. **Best partners:** Lucile and Min-jun (SYN-20 *Blue Hour*); anyone fast enough to act just before him.
 
 **Bond questline: BQ-PC11 *A Tune of My Own*** (CH-14; 4 Evening scenes at the Palais-Royal). He joins at R7, so Parts 1–4 and Evening scenes 1–4 are open at once; the finale opens at R9. No confession: he already knows.
 
-| Event | Title — beat |
-|---|---|
-| Part 1 | **Not My Songs** — he plays a tape tune at his old café; the crowd loves it; he cannot bear it |
-| Part 2 | **Mon Vieux** — Belleville in the 1930s against Mapo in the 2010s; two boys and their mothers |
-| Part 3 | **Eight Empty Bars** — Min-jun sets him eight bars with nothing borrowed; he fails twice |
-| Part 4 | **The Walkman's Grave** — the wrecked machine; he decides not to mend it |
-| Finale (R9) | **A Tune of My Own** — eight bars of his own: "Mine. Not on any tape. Play them back, slow." Lost Era cane *Blue Note* |
+| Rank | Event | Title — beat |
+|---|---|---|
+| R7 (join) | Part 1 | **Not My Songs** — he plays a tape tune at his old café; the crowd loves it; he cannot bear it |
+| R7 | Part 2 | **Mon Vieux** — Belleville in the 1930s against Mapo in the 2010s; two boys and their mothers |
+| R7 | Part 3 | **Eight Empty Bars** — Min-jun sets him eight bars with nothing borrowed; he fails twice |
+| R7 | Part 4 | **The Walkman's Grave** — the Walkman has been silent since his borrowed dynamo was wrecked in BOSS-11; the party's own dynamo (KEY-28) could wake it, and he decides he will never transcribe from it again |
+| R8 | — | Reached by BP; opens SYN-20 *Blue Hour* once Lucile is also R8 |
+| R9 | Finale | **A Tune of My Own** — eight bars of his own: "Mine. Not on any tape. Play them back, slow." |
+| R10 | — | 1000 BP with the finale done: command upgrade *Second Chorus* and the Lost Era cane *Blue Note* (CANON §14). No confession scene: he already knows |
 
 **Ending fates.** **Seoul:** stays in 1833; his waltz "pour M." (1851) waits in box JD-1888-07; his cassette becomes a Remembrance (*Changes*). **Paris:** opens *Le Diapason Bleu* on the Boulevard du Temple (Jan 1834), a jazz club a century early by candlelight; listens to the tapes once more before the Walkman is buried (SQ-23); his cassette forges the cane *Blue Note*. History lets his borrowed chords fade; what lasts is the tune he wrote himself.
 
@@ -751,21 +777,62 @@ She is asked "Will you come with me?" in CH-17 with ninety seconds on the Window
 
 ## 14. Guest Members (GST-01–GST-11)
 
-Guests take an active slot at the chapter's anchor level, gain no EXP and cannot be re-equipped (CANON §6; combat_ensemble §4.7). Each has one character note for writers and one for art.
+Guests take an active slot at the chapter's anchor level, gain no EXP, cannot be re-equipped or swapped, and never join Synergies or Cadenzas (CANON §6; combat_ensemble §4.7). Historical guests' biographies and voices belong to historical_cast; each entry here gives only what the guest is *in the party*: why they fight, what their command says about them, one moment for the scenario writers, and one note for art.
 
-| GST | Who · when | Command | Character note | Art note |
-|---|---|---|---|---|
-| GST-01 | **Mathurin Lebœuf** (FIC-09), 61 · CH-01 | LANTERN: reveals hidden paths and Echoes; Smoke | A wine-runner who pities a lost foreigner and asks nothing; touches Clef I for luck; Min-jun's first friend in 1833 and the lender of KEY-05 | Lantern glow on his sprite; `squint` |
-| GST-02 | **George Sand** (NPC-14) · CH-10 house-defence wave only | NOVEL: Tragedy / Romance / Satire; cane | Defends her house and her friend; names the Berry wolf-leader for the BOSS-13 hint; never shares a battle with Liszt, Delacroix or Chopin | `cigar`; 2-frame smoke loop |
-| GST-03 | **Camille Corot** (NPC-13) · CH-10, Fontainebleau | SOUVENIR: misty heal on all, Varnish | "You paint as I dream." Invites Lucile to Italy next spring (R6) | `dreamy`; misty brush |
-| GST-04 | **Clara Wieck** (NPC-05), 14 · CH-11 | PRODIGY: replays Min-jun's movement at +1 tier, else *Caprice* (AI) | Refuses to hide when the academy is ambushed; her father insists on AI control; never romanticised; the "Madame Schu—" slip | `proud` |
-| GST-05 | **Felix Mendelssohn** (NPC-07) · CH-11 | HEBRIDES: WATER + WIND wave; *Song without Words* cures Hush | The host whose city the Seventh Panel threatens; amused by Liszt and by Min-jun's Debussy | `amused` |
-| GST-06 | **Carl Czerny** (NPC-08) · CH-11 | VELOCITY: party Allegro; *School of Velocity* drills (+1 TMP per PC, max +3) | Came to hear his old pupil; not amused by *Doctor Gradus*, then laughs | `chuckle` |
-| GST-07 | **Robert Schumann as "Florestan"** (NPC-04) · BOSS-14 only | FLORESTAN / EUSEBIUS: BOLT or Cantabile (AI) | Incognito, never introduced by name to Mendelssohn, Chopin or Liszt; christens Min-jun "Meister Morgen"; personae, never illness | One sprite, bright and dusk palettes |
-| GST-08 | **Jacques Offenbach** (NPC-03), 14 · CH-13 corridors; CH-E2 | GALOP: six comic effects, weighted good | Follows Chopin "for the adventure"; worships Franchomme | `cheeky`; six GALOP frames |
-| GST-09 | **Sœur Marthe** (ANA-06) · CH-14; CH-E2 | TRIAGE: full heal and cleanse, once per battle | The defector who gave the future away for no credit; Paris branch: the Aubray-Kangs' physician | Grey-blue habit, white cornette; triage kneel |
-| GST-10 | **Sigismond Thalberg** (NPC-02) · optional SQ-20 (CH-14); CH-E2 | THREE HANDS: EARTH, LIGHT, WIND hits | Respect earned in a duel he knows was rigged in his favour | `intent`; three-hand reach |
-| GST-11 | **Théo Aubray** (FIC-01) · CH-12 escape | Non-combat escort (2,000 HP) | The boy who whittles a fused-hands key, and will build the Door | Cap too big, ultramarine muffler; cower frame |
+### 14.1 GST-01 Mathurin Lebœuf
+*FIC-09 · b. 1772 (61) · CH-01, Saint-Denis Galleries · LANTERN (P): reveals hidden paths, Unseen enemies and Echoes in walls, or Smoke (base 70) on one enemy · Tier B `squint`*
+
+A wine-runner who has carried casks under the toll wall for forty years and hides from the same patrols as the stranger. He pities a lost foreigner and asks nothing; he touches Clef I for luck as quarrymen always have, and lends Min-jun his lantern (KEY-05). His command is his trade: he knows where the stone is hollow. **Moment:** at the foot of the rue Saint-Jacques shaft, rain running down the ladder, he refuses the foreigner's only coin ("Keep it. You'll need bread more than I need thanks."). He is Min-jun's first friend in 1833. **Art:** lantern glow drawn into the sprite.
+
+### 14.2 GST-02 George Sand
+*NPC-14 · 29 · CH-10, the Nohant house-defence wave only · NOVEL (P): Tragedy (Coda 20 on one), Romance (Reverie on all), Satire (Out of Tune and DEF −25% on all, 5 turns); a cane · Tier B `cigar`*
+
+Her house and her friend are under attack, and she fights the way she writes: by choosing the genre. The wave's roster is Min-jun, Lucile and one of Farrenc or Alkan; she never shares a battle, scene or line with Liszt, Delacroix or Chopin (CANON §16e), so she is absent from BOSS-13. **Moment:** standing over a broken automaton, she recognises the Berry legend of the wolf-leader in the pack and gives the hint that silencing the piper scatters the wolves. **Art:** a 2-frame cigarillo smoke loop; Berry shawl over the grey redingote.
+
+### 14.3 GST-03 Camille Corot
+*NPC-13 · 37 · CH-10, Forest of Fontainebleau · SOUVENIR (P): misty party heal, then Varnish on all · Tier B `dreamy`*
+
+A lone-rock Echo (LAW-07) stalks the sandstone where he paints, and he will not leave his easel to it. His command heals the way his canvases soothe, through a silver haze. **Moment:** he looks at Lucile's Berry studies and says, "You paint as I dream," then invites her to Italy next spring, which opens the Horizon choice R6 (Min-jun's "Go. Paint with him." or "Spring is far off."). **Art:** a soft brush trailing mist on SOUVENIR.
+
+### 14.4 GST-04 Clara Wieck
+*NPC-05 · 14 · CH-11, Düsseldorf · PRODIGY (AI, at her father's insistence): replays Min-jun's current Recital movement one tier higher, otherwise Caprice (Allegro on one ally) · Tier B `proud`*
+
+When Mendelssohn's academy is ambushed she refuses to hide, and the command that copies Min-jun's playing a tier higher is the prodigy's pride made mechanical. She is never romanticised (CANON §16e). **Moment:** the "Madame Schu— Mademoiselle Wieck" slip (R-18): her father glares; no joke follows. **Art:** a little under adult height; music case clutched like a shield.
+
+### 14.5 GST-05 Felix Mendelssohn
+*NPC-07 · 24 · CH-11 · HEBRIDES (P): WATER + WIND wave on all; Song without Words cures Hush on the party · Tier B `amused`*
+
+The host whose city the Seventh Panel threatens, newly the municipal music director. Amused by Liszt, by Czerny and by Min-jun's Debussy, he hears REP-40 named as Rachmaninoff's and asks no further question, as a gentleman. **Moment:** he conducts the academy's evening as if the ambush were a late arrival. **Art:** neat dark curls, conductor's poise.
+
+### 14.6 GST-06 Carl Czerny
+*NPC-08 · 42 · CH-11 · VELOCITY (P): party Allegro; out of battle, three School of Velocity drills (+1 TMP per member, max +3) · Tier B `chuckle`*
+
+He came west to hear his old pupil and will not let him be shot. **Moment:** Min-jun plays him *Doctor Gradus ad Parnassum* (REP-04); he is not amused, then laughs, and opens the drills. **Art:** a teacher's frock coat and a metronome-steady stance.
+
+### 14.7 GST-07 Robert Schumann, as "Florestan"
+*NPC-04 · 23 · BOSS-14 only, aboard the Concordia · FLORESTAN / EUSEBIUS (AI): BOLT strikes or Cantabile, switching persona every 2 actions · Tier B `wistful`, name tab "Florestan"*
+
+A Leipzig critic travelling incognito with Wieck, never introduced by name to Mendelssohn, Chopin or Liszt (R-56). His two personae are creative masks, never illness (CANON §16e). **Moment:** told that Joseon's name means "morning freshness", he christens Min-jun "Meister Morgen". **Art:** one sprite, two palettes: bright for Florestan, dusk for Eusebius.
+
+### 14.8 GST-08 Jacques Offenbach
+*NPC-03 · 14 · CH-13 corridors; CH-E2 · GALOP (P): one of six comic effects, weighted to good results · Tier B `cheeky`*
+
+A substitute cellist in the Opéra pit who follows Chopin "for the adventure" and worships Franchomme. His random command is comedy kept in character (Tone Rule 8), never at the period's expense. **Moment:** in CH-E2 he carries Lucile's canvas on the approach to BOSS-33, cello case and all. **Art:** six GALOP frames; a cello case taller than his shoulders.
+
+### 14.9 GST-09 Sœur Marthe
+*ANA-06 · body 31 · CH-14; CH-E2 · TRIAGE (P): once per battle, full heal and every negative status cured on one ally · Tier A (`serene` proposed)*
+
+The cabal's physician who defects after the Opéra: the future given away for no credit, the positive mirror of Gift, Not Theft. One perfect act of care per battle, then she fights with what she has. **Moment:** in the Seoul branch she receives Min-jun's letter asking her to watch over Théo; in the Paris branch she becomes the Aubray-Kangs' physician. **Art:** the Daughters of Charity's grey-blue habit and white cornette; a triage kneel.
+
+### 14.10 GST-10 Sigismond Thalberg
+*NPC-02 · 21 · optional: SQ-20 (CH-14); CH-E2, both visits as Belgiojoso's guest · THREE HANDS (P): bass EARTH, melody LIGHT, arpeggio WIND · Tier B `intent`*
+
+Respect earned in a duel he knows was rigged in his favour, and an apology made in person. His three hits are the "three-hand" device he will unveil in Paris in 1836 (R-10). **Moment:** after the BOSS-35 rematch, won or lost, he bows to Min-jun exactly as deeply as Min-jun bows to him. **Art:** black and pearl-grey, kept clear of the party's key colours.
+
+### 14.11 GST-11 Théo Aubray
+*FIC-01 · 12 · CH-12, the Val-de-Grâce escape · no command: an escort with a 2,000-HP bar · Tier A (`brave` proposed)*
+
+The boy the whole romance turns on. He calls Min-jun "Monsieur Corée" until the abbey, and "Min-jun" ever after; he whittles a fused-hands key in CH-07, casts the real one in Pleyel's foundry the next spring, and half a century later carries it to Seoul. **Moment:** running out of breath before he runs out of words, he counts the abbey steps aloud so his sister will not worry: "Thirty-one. I counted. I'm fine." **Art:** a cap too big, Lucile's ultramarine muffler, a cower frame; never shown coughing in a portrait.
 
 ---
 
@@ -785,7 +852,7 @@ One line per pair (55 pairs). Historical friendships earlier or closer than the 
 | MJ–SY | Siblings: fury as love; she kept his slot warm and, in Paris, receives his past |
 | MJ–JW | Roommates; the friend who keeps time when his hands shake |
 | MJ–JU | The thief he could have become; spared, he becomes a sideman, then a composer |
-| LU–BE | He calls her colour "symphonic"; she sketches Harriet at the wedding supper; *Prometheus* (SYN-15) |
+| LU–BE | He calls her colour "symphonic"; she paints Harriet a white-rose fan when the newlyweds' rooms are bare (CH-12+); *Prometheus* (SYN-15) |
 | LU–DE | Light against colour, rivals over the Light State; her father gilded his frames; she saves him in the rafters; he paints her into the portrait (SYN-10, SYN-13) |
 | LU–AL | He asks the weight of a cake of Prussian blue; she asks him to sit; he lasts four minutes |
 | LU–CH | Born three weeks apart; he came to the Louvre for her copy; *Nocturne in Blue*; in Paris his 24th birthday is kept at her Atelier |
@@ -839,13 +906,45 @@ One line per pair (55 pairs). Historical friendships earlier or closer than the 
 |---|---|---|
 | PC-01 | Archon's living string; Vane's private English; Brücke's quarry (freed by a promise in Seoul); Julien spared; Delorme's accuser and accused | Mère Gaudin, Petit-Louis, Mathurin; Cherubini; Prof. Yoon; Pleyel; Gisquet; Heine ("the Nightingale of Nowhere") |
 | PC-02 | Vane's agent and his refusal; Delorme's target (Erasure); Marthe's patient's sister and her rescuer | Sand; Théo; Corbel; Mme Daubrée; M. Bourdin; Ingres (hostile); Delaroche (swing vote); Chassériau; Corot |
-| PC-03 | — | Harriet Smithson; Marie Moke-Pleyel; Habeneck; Paganini; Girard |
+| PC-03 | Archon insists on him for the gala podium (R-29), and gets a conductor who carries the orchestra through the pianists' mid-concerto modulation that spoils the recording | Harriet Smithson; Marie Moke-Pleyel; Habeneck; Paganini; Girard |
 | PC-04 | Delorme's rival in paint | Thiers; Ingres; Delaroche; Horace Vernet |
 | PC-05 | Brücke's metal, read at a glance | His family; Cherubini's Conservatoire |
-| PC-06 | His Pleyel, Brücke's target | Franchomme; Hiller; Kalkbrenner; Pleyel; Offenbach |
+| PC-06 | His Pleyel, Julien's "break" and Brücke's "lethal" (rung 8) | Franchomme; Hiller; Kalkbrenner; Pleyel; Offenbach |
 | PC-07 | Thalberg's sponsor, Vane | Marie d'Agoult; Anna Liszt; Czerny; Belgiojoso; Thalberg; Clara Wieck |
 | PC-08 | Delorme's formulas | Aristide and Victorine Farrenc; Pleyel; Sand (the Code) |
 | PC-09 / PC-10 | Brücke in 2026 | The Kang parents; Prof. Yoon; Det. Oh |
 | PC-11 | Former brothers: Delorme found him, Vane lent the tapes, Brücke betrayed him | Mère Gaudin's tavern crowd |
 
 ---
+
+## Canon Additions & Cross-Doc Notes
+
+**CCR** (logged here instead of CANON §2b; nothing in this doc depends on it being adopted):
+
+- **CCR: a post-credits Historical Afterword screen.** *What:* after the ending roll and end cards of either branch, an optional plain-text **Afterword** screen (also reopenable from the title menu once seen) with one paragraph per historical party member, PC-03–PC-08, using the afterword texts of §5–§10. Each paragraph runs to at most 6 boxes in the 4 × 30 no-portrait format, is headed by the name and birth year only, and tells works and legacy within the Lantern Rule (LAW-18): no death is ever stated or depicted. *Why:* the brief asks for a historically careful game, and players who have lived beside these six people will want to know what became of their work; Tone Rule 6 allows narration only on the ending roll and end cards, so a new screen needs a canon exception. *Touches:* CANON §1 (Tone Rule 6), epilogues.md (placement after the cards), art_and_ui (screen layout), audio_and_music (a quiet arrangement of LM-01 under it), historical_notes_and_liberties (each paragraph verified). *Fallback until adopted:* the six paragraphs are writer reference only, and their substance may feed the existing end cards within the 2-line limit.
+
+**New shared facts** (elaboration inside this doc's slice, CANON §0b; other docs cite, never redefine):
+
+- **Defining scenes** (binding titles and beats for the scenario docs): Min-jun "Eight Bars" (CH-13); Lucile "The Night of Stars" (CH-14); Berlioz "The Wedding Menu" (CH-09); Delacroix "Eight Emblems" (CH-09); Alkan "The Wolf Fifth" (CH-15, the crypt door: he hands out the KEY-32 forks without a speech); Chopin "Żal" (CH-09); Liszt "The Unplayed Encore" (CH-10: at his La Châtre benefit a Nohant stable-boy brings word of the wolves, and he leaves his encore unplayed and rides into the Vallée Noire in concert dress); Farrenc "By One Candle" (CH-10, Sat 19 Oct); Seo-yeon "Nine Months" (CH-E1) and "The Bow Lifts" (CH-E2 coda); Jae-won "Four In, Four Out" (CH-E1, the clock tower); Julien "The Bundle" (CH-09). *Affects:* prologue_and_act1, act2, act3, act4_and_epilogue, epilogues.
+- **Bond-quest part titles, rank events and Evening-scene titles** for BQ-PC02, BQ-PC02b, BQ-PC03, BQ-PC04, BQ-PC05, BQ-PC06, BQ-PC07, BQ-PC08 and BQ-PC11 (§4.13, §5–§10, §13), each with its beat. Specific placements: BQ-PC03 Part 1 "Pages from Rome" carries TUT-16 *Marche au supplice*; a **story step, "The Bride's Gift"**, fires at the CH-09 wedding supper in every run and gives TUT-17 *Songe d'une nuit du sabbat* (Harriet returns the *Sabbat* pages); the BQ-PC03 finale carries TUT-19 (all three as skills_and_progression §5.2 places them). BQ-PC04 Part 3 reworks the *Scio* studies (the *Chios* recipe). BQ-PC08's finale is Delorme's raid on Pleyel's archive and yields OPS-30 *Barricades*. BQ-PC02 Part 4 redeems Gilles Aubray's burnishing agate from the Mont-de-Piété and gilds the frame for *Women of Algiers*. Lucile's Evening scene 5, "Théo Counts", needs CH-07 or later (Théo is introduced in CH-07). *Affects:* side_and_bond_quests (owns full content, maps and rewards), secrecy_and_trust (Evening-scene names), items_and_equipment (quest props as ITM entries: the Rome notebooks, the burnishing agate, the Saint-Étienne railway print, the Couperin box).
+- **Rank rows without scenes:** Delacroix's and Chopin's R7–R9 and Lucile's and Julien's R8–R9 have no events of their own; the rows state what each threshold unlocks (Cadenza, Hint, Trio eligibility, SYN-15 and SYN-20 openings, Julien's R10 *Second Chorus* and Lost Era cane). *Affects:* secrecy_and_trust, side_and_bond_quests.
+- **Min-jun's 2026 life:** the Kangs moved from Incheon to Mapo-gu in 2012, when Kang Do-hyun took over the Euljiro shop; the fallboard tap began at his first recital, aged six, on his mother's advice ("so the piano knows you're coming"); REP-30 was his autumn 2025 jury piece, and Prof. Yoon's note on it read "Beautiful. Where does it go?"; a laptop folder of first pages; army-band arranging as the root of his orchestral talk with Berlioz; his musical voice (parallel ninths, 12/8 lilts caught from Jae-won's samulnori rehearsals, pieces built from the left hand up). *Affects:* prologue_and_act1, epilogues, audio_and_music (LM-02 notes), dialogue_style_guide.
+- **Lucile's background figures:** Mme Daubrée's atelier, 1826–1828; her refused Salon of 1833 entry is a portrait of Théo whittling by the skylight; she taught Sand to float copal varnish; Sand's pet name comes from her moving her stool to follow the window light; attic rent 150 F a year; Corbel pays 10 sous a fan leaf and 1 F a snuffbox lid, about forty fans a week (≈ 20 F); Vane's velvet threat, "It would be a pity if Maison Grimaud grew impatient, my dear." All within CANON §14's anchors and R-55. *Affects:* act2 (the CH-03 and CH-07 POV scenes), salons_duels_and_economy (flavour only), overworld_and_towns (LOC-P20 dressing).
+- **Farrenc before CH-08:** she is never on screen, but the Period Scores sold at Maison Farrenc in CH-05–CH-07 carry her pencilled fingerings, and Lucien (TF-030) says only that Monsieur Farrenc is at the printer's. This follows historical_cast's fix keeping both Farrencs off the counter before CH-08. *Affects:* overworld_and_towns, items_and_equipment (Score description text), act2.
+- **Ending-fate details:** Chopin is the hand that corrected the bass of Delacroix's 1841 *Sarabande* (world_rules_and_lore §13.02 leaves it unnamed); in the Paris branch Alkan drops the last nitinol spring into Pleyel's furnace during SQ-23; Liszt turns pages at BOSS-35 while Belgiojoso renews her vow; Berlioz reads KEY-37 aloud at the Atelier. *Proposed* (epilogues owns them): the ending-roll vignettes in each section; Seo-yeon joins the Seoul party on the night of the return, Tue 22 Dec 2026, plays the opening of the *Harmonies* finale at the premiere's rehearsal, and organised the posters and vigil with Jae-won; Jae-won's single line in the Paris coda is a text message. *Affects:* epilogues, side_and_bond_quests (SQ-23), act4_and_epilogue.
+- **Julien's Walkman** (reading of R-15): what BOSS-11 wrecked is Brücke's borrowed dynamo; the Walkman itself survives, silent. In BQ-PC11 Part 4 he swears never to transcribe from it again, and he plays it once more only to say goodbye before it is buried (SQ-23, CH-E2). *Affects:* side_and_bond_quests, epilogues, items_and_equipment (KEY-15 text).
+- **Guest moments** (§14): Mathurin refuses the foreigner's only coin; Sand's wolf-leader hint over a broken automaton; Corot's "You paint as I dream" over the Berry studies; Mendelssohn's unasked question; Thalberg's matched bow after BOSS-35; Théo's "Thirty-one. I counted. I'm fine." *Affects:* prologue_and_act1, act3, act4_and_epilogue, epilogues.
+- **Relationship-matrix beats** (§15) are seed material for Ensemble Scenes, Field Talk and CH-14 Kindred dialogue: Lucile's white-rose fan for Harriet (CH-12+), Alkan weighing a cake of Prussian blue and lasting four minutes as a sitter, Liszt carrying Lucile's easel, Chopin mimicking Julien's swing, Farrenc's restitution terms for Julien, Delacroix's sketch of Julien at a borrowed piano, Alkan opening the Walkman once, and Jae-won's four-timpani exam. *Affects:* side_and_bond_quests, act4_and_epilogue, epilogues.
+- **Art proposals:** Lucile's cheek fleck tracking her manner (Prussian blue, Berry ochre, chrome yellow, a warm and a cool fleck together); Min-jun's battle idle (two baton taps on his palm) and *Arirang* field hum; Delacroix's speck-flick idle; Chopin's glove-tug idle. *Affects:* art_and_ui.
+
+**Cross-doc notes** (each names the doc that must act):
+
+- **skills_and_progression:** every skill, Étude, Study, Tutti, Score and rank-10 upgrade named here is its v1.0 name and effect; this doc no longer proposes any skill. It relies on its §4.3 (OPS-25 from BOSS-17 with Own Voice ≥ 6; OPS-30 from the BQ-PC08 finale), §5.2 (TUT-16, TUT-17, TUT-19 placements, now matched by the BQ-PC03 table) and §17.2.
+- **combat_ensemble:** REP-27, REP-29 and REP-30 give only +3 Crescendo per movement until its effect CCR is adopted; §3.8 says so.
+- **secrecy_and_trust:** Evening-scene counts (LU 6, BE 8, DE 6, AL 8, CH 6, LI 8, FA 8, JU 4), BQ-PC02's part gates and the mandatory quests' BP are used unchanged; please add the CH-07 gate to Lucile's Evening scene 5.
+- **world_rules_and_lore:** this doc follows its CCR on Julien's ring (CANON §8 wording: he took a ring and never wore it) and its §13.12 white-soles report. It names Chopin as the corrector of Var. II, which fills a gap and changes no wording there.
+- **historical_cast:** consistent with its Sand, Théo and Farrenc entries and its fixes (no Farrenc at the counter before CH-08; Lucile's redingote disguise; Anna Liszt's mended glove; Théo's "Monsieur Corée"). New here and for it to mirror: the Nohant stable-boy as Liszt's CH-10 messenger (Petit-Louis stays in Paris).
+- **dialogue_style_guide:** the excerpt in §4.8 uses its §2.2 line format and §2.4 stage directions; the portrait extras marked "proposed" here (Delacroix `appraising`, Farrenc `sceptical`, Seo-yeon `scowl`, Jae-won `pumped`, Julien `sheepish`, Marthe `serene`, Théo `brave`) depend on its pending CCR and fall back as it specifies.
+- **art_and_ui:** costume sets follow its §4.2 and its pending CCR (Min-jun Seoul and Winter; Lucile Interlude and Winter; Berlioz's wedding coat). Liszt's 3-frame idle and Chopin's ≤ 4 `cough` uses match its §5.2–§5.3.
+- **epilogues / act4_and_epilogue:** the Keeper's Choice default (a) and every branch fate here follow LAW-24–LAW-26; the vignettes are proposals for the ending roll.
+- **historical_notes_and_liberties**, please verify: Berlioz's Prix de Rome at the fourth attempt (1827–1830); Alkan's premiers prix (piano 1824, harmony 1827); Chopin's E-minor Concerto, Op. 11, published 1833 and dedicated to Kalkbrenner; Liszt's single 1833 piece *Harmonies poétiques et religieuses*; Delacroix's few days in Algiers (June 1832); Berlioz finishing his *Mémoires* in 1865 (published 1870); Farrenc's Prix Chartier (1861, 1869) and *Le Trésor des pianistes* in 23 volumes (1861–1872); Alkan's *Petits Concerts* at the Salle Érard (1873–1880); the Chaillot steam pumps still working in 1833; the flower market on the Quai aux Fleurs in 1833. The variation correction, the friendships and all bond-quest events are R-00 inventions.
