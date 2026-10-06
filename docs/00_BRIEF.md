@@ -154,6 +154,23 @@ When generating encounters, quests, or party interactions, draw heavily from thi
   shadowy figure at the piano, dedicated: *"To our brother from tomorrow, who taught us the music
   of the stars."*
 
+## Director's Addenda
+
+> Additions made by the director after the brief was issued. They carry the same authority as
+> the brief itself.
+
+### A-1 — The Anachronists' second motive: the portal itself (2026-10-06)
+
+Beyond fearing that Min-jun's slip-ups will expose them in 1833, the Anachronists fear his
+**return**. If Min-jun goes back to 2026, he becomes living proof that the portal exists. He could
+reveal it to the modern world: authorities, scientists, the press. The doorway could then be
+found, studied, guarded, or shut from the future side, and the cabal's hiding places in history
+could be uncovered. Their secret survives only if he never goes home.
+
+So their campaign against him **escalates**. It starts with discrediting him and sabotaging his
+search for the way back. It grows into open attempts to **destroy** him: framing, kidnapping and
+assassination, all to keep the portal secret.
+
 ## Output Instructions
 
 When prompted for content within this game universe, ensure that responses align with 16-bit
