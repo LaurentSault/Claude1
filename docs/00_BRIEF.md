@@ -171,6 +171,21 @@ So their campaign against him **escalates**. It starts with discrediting him and
 search for the way back. It grows into open attempts to **destroy** him: framing, kidnapping and
 assassination, all to keep the portal secret.
 
+### A-2 — The romance: an original heroine (2026-10-06)
+
+The story needs a romance, built around **an original character of our own creation**, not a
+historical figure:
+
+- **Who she is:** a struggling Parisian painter, **23 years old in 1833** (born 1810), and a
+  **younger friend of George Sand**.
+- **The art thread:** Min-jun introduces her to **Impressionism**, decades before it existed. She
+  begins painting works in the styles of **Monet, Pissarro and van Gogh**. Her canvases astonish
+  everyone who sees them, and they are themselves a dangerous change to history.
+- **The twist:** she was **set up by the Anachronists** at first. She was placed in Min-jun's path
+  to **keep him in Paris**: to give him a reason not to go home, and a way for them to watch him.
+- **The resolution:** despite how it began, they **fall for each other anyway**. The romance
+  survives the betrayal and comes to fruition at the end of the story.
+
 ## Output Instructions
 
 When prompted for content within this game universe, ensure that responses align with 16-bit
